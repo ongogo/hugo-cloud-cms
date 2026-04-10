@@ -1,0 +1,11 @@
+{
+  "name": "hugo-cloud-cms",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "hugo --minify",
+    "dev": "hugo server -D"
+  },
+  "devDependencies": {
+    "hugo-extended": "^0.124.1"
+  }
+}
