@@ -1,0 +1,4 @@
+baseURL = 'https://hugo-cloud-cms.pages.dev/'
+languageCode = 'en-us'
+title = 'My Hugo Cloud CMS'
+theme = 'ananke'
