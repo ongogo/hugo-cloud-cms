@@ -3,7 +3,7 @@ title: "Vocational schools new front in China's strategy to support businesses' 
 date: 2026-04-11T23:19:00+08:00
 tags: ["SCMP", "China-economy", "vocational-education", "global-expansion", "talent-development"]
 author: "SCMP"
-url: "https://www.scmp.com/economy/china-economy/article/3349616/vocational-schools-new-front-chinas-strategy-support-businesses-global-expansion?module=flexi_unit-focus&pgtype=homepage"
+source_url: "https://www.scmp.com/economy/china-economy/article/3349616/vocational-schools-new-front-chinas-strategy-support-businesses-global-expansion?module=flexi_unit-focus&pgtype=homepage"
 ---
 
 ## Chinese Summary / 中文摘要
