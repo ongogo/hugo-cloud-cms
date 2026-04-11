@@ -1,4 +1,7 @@
 baseURL = 'https://hugo-cloud-cms.pages.dev/'
 languageCode = 'en-us'
 title = 'My Hugo Cloud CMS'
-theme = 'ananke'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/theNewDynamic/gohugo-theme-ananke/v2'
