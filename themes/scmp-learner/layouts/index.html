@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="hero">
+    <h1>Welcome to SCMP Learner</h1>
+    <p>Read, study, and master English vocabulary with our minimalist, distraction-free environment curated for SCMP articles.</p>
+</div>
+<section class="recent-articles">
+    <h2>Recent Articles</h2>
+    {{ range (where .Site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
+    <article class="list-item">
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+        <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
+</section>
+{{ end }}

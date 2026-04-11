@@ -1,0 +1,242 @@
+:root {
+  /* Classic Paper Reading Theme */
+  --bg-color: #FAFAF8;
+  --text-color: #2b2b2b;
+  --text-light: #6b6b6b;
+  --link-color: #0b5394;
+  --link-hover: #073763;
+  --border-color: #e3e3e3;
+  
+  /* Brand/Accent specifically designed to look like highlighters and dictionary entries */
+  --accent-color: #b7410e;
+  --accent-bg: #fff0e5;
+  --list-bg: #f3f5f9;
+  --code-bg: #f0f0f0;
+
+  /* Typography */
+  --font-reading: 'Lora', 'Georgia', serif;
+  --font-ui: 'Inter', system-ui, -apple-system, sans-serif;
+  --base-size: 20px;
+  --line-height: 1.8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1a1b1d;
+    --text-color: #e0e0e0;
+    --text-light: #9e9e9e;
+    --link-color: #79aeff;
+    --link-hover: #b3d1ff;
+    --border-color: #383838;
+    --accent-color: #ff8c69;
+    --accent-bg: #2d1e18;
+    --list-bg: #22252a;
+    --code-bg: #2b2b2b;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 1rem;
+  font-family: var(--font-reading);
+  font-size: var(--base-size);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Restrict width for optimal eye tracking */
+header, main, footer {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 3rem;
+}
+
+header nav a.logo {
+  font-family: var(--font-ui);
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  letter-spacing: -0.5px;
+}
+
+main {
+  min-height: 70vh;
+}
+
+footer {
+  padding: 3rem 0;
+  margin-top: 5rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.25;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+h1 { font-size: 2.2rem; margin-top: 0; letter-spacing: -0.5px; }
+
+/* 
+  Special styling for typical sections in language learning:
+  "## Chinese Summary", "## Content Summary", "## Useful Phrases" 
+*/
+.content h2 { 
+  font-size: 1.4rem; 
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+}
+h3 { font-size: 1.25rem; }
+
+p { margin-top: 0; margin-bottom: 1.5rem; }
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-decoration-color: var(--border-color);
+  text-underline-offset: 4px;
+  transition: all 0.2s ease;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--link-hover);
+  text-decoration-thickness: 2px;
+}
+
+/* Enhancing Vocabulary Lists */
+.content ul, .content ol {
+  margin: 2rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  background-color: var(--list-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+.content li {
+  margin-bottom: 1rem;
+}
+.content li:last-child {
+  margin-bottom: 0;
+}
+
+/* Make vocabulary words punchy */
+.content strong {
+  font-family: var(--font-ui);
+  color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  .content strong { background-color: rgba(255, 255, 255, 0.1); }
+}
+
+.content em {
+  color: var(--text-light);
+}
+
+/* Styled for context or example sentences */
+.content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  background-color: var(--accent-bg);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+.content blockquote p { margin-bottom: 0; }
+
+/* Meta data */
+.article-header {
+  margin-bottom: 3rem;
+}
+.meta {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 1rem;
+}
+.meta a { color: var(--link-color); text-decoration: none; }
+.meta a:hover { text-decoration: underline; }
+
+/* Lists styling */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.list-item h2 a, .list-item h3 a {
+  text-decoration: none;
+}
+.list-item h2 a:hover, .list-item h3 a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.list-item p.meta {
+  margin-bottom: 0.5rem;
+}
+.list-item .read-more {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.list-item .read-more:hover {
+  background-color: var(--bg-color);
+  border-color: var(--link-color);
+}
+
+.hero {
+  margin: 2rem 0 4rem;
+  text-align: center;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { 
+  font-size: 1.25rem; 
+  color: var(--text-light); 
+  font-family: var(--font-ui); 
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Code */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+  background-color: var(--code-bg);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
+}

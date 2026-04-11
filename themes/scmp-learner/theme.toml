@@ -1,0 +1,12 @@
+name = "scmp-learner"
+license = "MIT"
+licenselink = "https://github.com/yourname/scmp-learner/blob/main/LICENSE"
+description = "A bespoke, classless-style Hugo theme optimized for learning English through reading."
+homepage = "https://github.com/yourname/scmp-learner"
+tags = ["minimal", "classless", "learning", "reading", "education"]
+features = ["minimal", "classless", "responsive", "light", "dark", "typography-focused"]
+min_version = "0.60.0"
+
+[author]
+  name = "Ongogo"
+  homepage = "https://github.com/ongogo"

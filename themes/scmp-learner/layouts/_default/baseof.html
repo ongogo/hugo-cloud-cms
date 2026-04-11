@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Lora for reading, Inter for UI -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <!-- Optionally include user custom css -->
+    {{ range .Site.Params.custom_css -}}
+        <link rel="stylesheet" href="{{ . | relURL }}">
+    {{- end }}
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ .Site.BaseURL }}" class="logo"><strong>{{ .Site.Title }}</strong></a>
+        </nav>
+    </header>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. Made for learners.</p>
+    </footer>
+</body>
+</html>

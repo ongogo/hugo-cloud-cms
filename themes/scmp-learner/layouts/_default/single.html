@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article>
+    <header class="article-header">
+        <h1>{{ .Title }}</h1>
+        <div class="meta">
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+            {{ if .Params.author }} | <span>{{ .Params.author }}</span>{{ end }}
+            {{ if .Params.source_url }} | <a href="{{ .Params.source_url }}" target="_blank" rel="noopener noreferrer">🔗 Original SCMP Source</a>{{ end }}
+        </div>
+    </header>
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}
