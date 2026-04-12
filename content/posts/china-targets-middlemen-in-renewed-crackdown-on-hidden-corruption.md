@@ -3,7 +3,7 @@ title: "China targets middlemen in renewed crackdown on hidden corruption"
 date: 2026-04-12
 tags: ["SCMP", "news"]
 author: "SCMP"
-url: "https://www.scmp.com/news/china/politics/article/3349749/china-targets-middlemen-renewed-crackdown-hidden-corruption?module=top_story&pgtype=homepage"
+source_url: "https://www.scmp.com/news/china/politics/article/3349749/china-targets-middlemen-renewed-crackdown-hidden-corruption?module=top_story&pgtype=homepage"
 ---
 
 ## Summary
