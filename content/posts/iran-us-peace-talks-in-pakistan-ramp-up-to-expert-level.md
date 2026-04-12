@@ -1,9 +1,12 @@
 ---
 title: "Iran-US peace talks in Pakistan ramp up to 'expert level'"
 date: 2026-04-11
-tags: ["SCMP", "news"]
+tags: ["SCMP", "diplomacy"]
 author: "SCMP"
 source_url: "https://www.scmp.com/news/china/diplomacy/article/3349706/us-iran-direct-talks-hours-away-first-strikes-began-6-weeks-ago?module=top_story&pgtype=homepage"
+difficulty: "intermediate"
+topic: "diplomacy"
+summary_zh: "伊朗与美国在巴基斯坦伊斯兰堡的谈判升级至专家层面，双方派出经济、军事及核能团队参与技术磋商。"
 ---
 
 ## Summary

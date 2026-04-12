@@ -1,9 +1,12 @@
 ---
 title: "China targets middlemen in renewed crackdown on hidden corruption"
 date: 2026-04-12
-tags: ["SCMP", "news"]
+tags: ["SCMP", "politics"]
 author: "SCMP"
 source_url: "https://www.scmp.com/news/china/politics/article/3349749/china-targets-middlemen-renewed-crackdown-hidden-corruption?module=top_story&pgtype=homepage"
+difficulty: "intermediate"
+topic: "politics"
+summary_zh: "中国最高法院出台司法解释，将腐败中间人纳入刑事责任范围，最高可判有期徒刑三年。"
 ---
 
 ## Summary

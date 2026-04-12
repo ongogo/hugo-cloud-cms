@@ -1,13 +1,35 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<div class="article-list">
-    {{ range .Pages }}
-    <article class="list-item">
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
-        <p>{{ .Summary }}</p>
-        <a href="{{ .Permalink }}" class="read-more">Read more &rarr;</a>
+<section class="posts-page container">
+
+  <header class="page-header">
+    <h1>All Articles</h1>
+    <p class="page-subtitle">English learning through real SCMP news</p>
+  </header>
+
+  <div class="post-grid">
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="post-card">
+      <div class="card-meta-top">
+        {{ with .Params.topic }}<span class="badge badge-topic">{{ . }}</span>{{ end }}
+        {{ with .Params.difficulty }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+      </div>
+      <h2 class="card-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      <p class="card-date">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </p>
+      {{ with .Params.summary_zh }}
+        <p class="card-summary-zh">{{ . }}</p>
+      {{ end }}
+      <p class="card-summary">{{ .Summary | plainify | truncate 120 }}</p>
+      <div class="card-tags">
+        {{ range .Params.tags }}<span class="badge badge-tag">{{ . }}</span>{{ end }}
+      </div>
+      <a href="{{ .Permalink }}" class="card-cta">阅读全文 Read article →</a>
     </article>
     {{ end }}
-</div>
+  </div>
+
+</section>
 {{ end }}

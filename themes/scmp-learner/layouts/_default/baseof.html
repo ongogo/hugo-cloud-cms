@@ -1,31 +1,58 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.LanguageCode }}" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-    <!-- Preconnect to Google Fonts -->
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
+
+    <!-- Google Fonts: Inter (UI) + Lora (Body) + Noto Sans SC (CJK) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Lora for reading, Inter for UI -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-    <!-- Optionally include user custom css -->
-    {{ range .Site.Params.custom_css -}}
-        <link rel="stylesheet" href="{{ . | relURL }}">
-    {{- end }}
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="{{ .Site.BaseURL }}" class="logo"><strong>{{ .Site.Title }}</strong></a>
+    <header class="site-header">
+        <nav class="site-nav container">
+            <a href="{{ .Site.BaseURL }}" class="site-logo">
+                <span class="logo-icon">📰</span>
+                <strong>{{ .Site.Title }}</strong>
+            </a>
+            <div class="nav-links">
+                <a href="{{ .Site.BaseURL }}posts/">All Articles</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
+            </div>
         </nav>
     </header>
-    <main>
+
+    <main class="site-main">
         {{ block "main" . }}{{ end }}
     </main>
-    <footer>
-        <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. Made for learners.</p>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© {{ now.Format "2006" }} {{ .Site.Title }} — Built for learners 📚</p>
+        </div>
     </footer>
+
+    <script>
+        // Dark mode toggle
+        const toggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const saved = localStorage.getItem('theme') ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        html.setAttribute('data-theme', saved);
+
+        toggle.addEventListener('click', () => {
+            const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+    </script>
 </body>
 </html>

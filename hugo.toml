@@ -2,6 +2,10 @@ baseURL = 'https://hugo-cloud-cms.pages.dev/'
 languageCode = 'en-us'
 title = 'SCMP English Learning'
 theme = 'scmp-learner'
+hasCJKLanguage = true
+summaryLength = 60
 
 [params]
   mainSections = ["posts"]
+  description = "Read SCMP news articles and master English vocabulary in context — designed for Chinese learners."
+  author = "SCMP English Learning"

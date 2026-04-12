@@ -1,16 +1,48 @@
 {{ define "main" }}
-<div class="hero">
-    <h1>Welcome to SCMP Learner</h1>
-    <p>Read, study, and master English vocabulary with our minimalist, distraction-free environment curated for SCMP articles.</p>
-</div>
-<section class="recent-articles">
-    <h2>Recent Articles</h2>
-    {{ range (where .Site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
-    <article class="list-item">
-        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        <p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
-        <p>{{ .Summary }}</p>
+
+{{/* ── Hero ── */}}
+<section class="hero container">
+  <div class="hero-content">
+    <h1 class="hero-title">SCMP <span class="accent">English</span> Learning</h1>
+    <p class="hero-sub">Real news. Real English. Designed for Chinese learners.</p>
+    <a href="{{ .Site.BaseURL }}posts/" class="hero-cta">Browse All Articles →</a>
+  </div>
+</section>
+
+{{/* ── Recent Posts ── */}}
+<section class="recent-posts container">
+  <h2 class="section-title">Recent Articles</h2>
+  <div class="post-grid">
+    {{ $posts := where .Site.RegularPages "Section" "posts" }}
+    {{ range first 6 ($posts.ByDate.Reverse) }}
+    <article class="post-card">
+      <div class="card-meta-top">
+        {{ with .Params.topic }}<span class="badge badge-topic">{{ . }}</span>{{ end }}
+        {{ with .Params.difficulty }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+      </div>
+      <h2 class="card-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      <p class="card-date">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </p>
+      {{ with .Params.summary_zh }}
+        <p class="card-summary-zh">{{ . }}</p>
+      {{ end }}
+      <p class="card-summary">{{ .Summary | plainify | truncate 100 }}</p>
+      <div class="card-tags">
+        {{ range .Params.tags }}<span class="badge badge-tag">{{ . }}</span>{{ end }}
+      </div>
+      <a href="{{ .Permalink }}" class="card-cta">Read article →</a>
     </article>
     {{ end }}
+  </div>
+
+  {{ if gt (len $posts) 6 }}
+  <div class="view-all">
+    <a href="{{ .Site.BaseURL }}posts/" class="view-all-link">View all articles →</a>
+  </div>
+  {{ end }}
 </section>
+
 {{ end }}
