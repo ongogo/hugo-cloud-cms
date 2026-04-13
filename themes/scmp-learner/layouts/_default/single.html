@@ -1,34 +1,39 @@
 {{ define "main" }}
-<article class="post container">
+<article class="post-page">
 
-  {{/* ── Hero Header ── */}}
-  <header class="post-header">
-    <div class="post-meta-top">
-      {{ with .Params.topic }}<span class="badge badge-topic">{{ . }}</span>{{ end }}
-      {{ with .Params.difficulty }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
-      {{ range .Params.tags }}<span class="badge badge-tag">{{ . }}</span>{{ end }}
-    </div>
-    <h1 class="post-title">{{ .Title }}</h1>
-    <div class="post-meta">
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-      {{ if .Params.author }}<span class="meta-sep">·</span><span>{{ .Params.author }}</span>{{ end }}
-      {{ if .Params.source_url }}
-        <span class="meta-sep">·</span>
-        <a class="source-link" href="{{ .Params.source_url }}" target="_blank" rel="noopener noreferrer">
-          🔗 Read Original
-        </a>
-      {{ end }}
+  <header class="post-hero">
+    <div class="post-hero-inner">
+      <div class="post-crumbs">
+        <a href="{{ .Site.BaseURL }}">Home</a>
+        <span>›</span>
+        <a href="{{ .Site.BaseURL }}posts/">Articles</a>
+        <span>›</span>
+        <span class="crumb-cur">{{ .Title | truncate 45 }}</span>
+      </div>
+      <div class="post-meta-pills">
+        {{ with .Params.difficulty }}<span class="diff-pill diff-{{ . }}">{{ . }}</span>{{ end }}
+        {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+      <h1 class="post-title">{{ .Title }}</h1>
+      <div class="post-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ if .Params.author }}<span>·</span><span>{{ .Params.author }}</span>{{ end }}
+        {{ if .Params.source_url }}
+          <span>·</span>
+          <a class="source-link" href="{{ .Params.source_url }}" target="_blank" rel="noopener noreferrer">Read original ↗</a>
+        {{ end }}
+      </div>
     </div>
   </header>
 
-  {{/* ── Render content with section-aware styling ── */}}
-  <div class="post-body">
-    {{ .Content }}
+  <div class="post-content">
+    <div class="post-body">
+      {{ .Content }}
+    </div>
   </div>
 
-  {{/* ── Back navigation ── */}}
-  <footer class="post-footer">
-    <a href="{{ .Site.BaseURL }}posts/" class="back-link">← Back to all articles</a>
+  <footer class="post-foot">
+    <a href="{{ .Site.BaseURL }}posts/" class="btn-back">← Back to all articles</a>
   </footer>
 
 </article>

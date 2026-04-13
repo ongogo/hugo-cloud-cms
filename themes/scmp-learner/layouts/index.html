@@ -1,46 +1,77 @@
 {{ define "main" }}
 
-{{/* ── Hero ── */}}
-<section class="hero container">
-  <div class="hero-content">
-    <h1 class="hero-title">SCMP <span class="accent">English</span> Learning</h1>
-    <p class="hero-sub">Real news. Real English. Designed for Chinese learners.</p>
-    <a href="{{ .Site.BaseURL }}posts/" class="hero-cta">Browse All Articles →</a>
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $sorted := $posts.ByDate.Reverse }}
+{{ $latest := index $sorted 0 }}
+{{ $rest := after 1 (first 7 $sorted) }}
+
+{{/* ── HERO MASTHEAD ── */}}
+<section class="hero-masthead">
+  <div class="masthead-inner">
+    <div class="masthead-eyebrow">
+      <span class="eyebrow-tag">Real News · Real English</span>
+      <span class="eyebrow-date">{{ now.Format "Monday, January 2, 2006" }}</span>
+    </div>
+    <h1 class="masthead-title">
+      <span>Learn English</span>
+      <em>Through the News</em>
+    </h1>
+    <p class="masthead-sub">SCMP articles curated &amp; annotated for Chinese learners — vocabulary, idioms, and writing tips in every lesson.</p>
+    <a href="{{ .Site.BaseURL }}posts/" class="btn-cta">Browse All Lessons →</a>
+  </div>
+  <div class="masthead-deco" aria-hidden="true">
+    <span class="deco-num">{{ len $posts }}</span>
+    <span class="deco-label">lessons</span>
   </div>
 </section>
 
-{{/* ── Recent Posts ── */}}
-<section class="recent-posts container">
-  <h2 class="section-title">Recent Articles</h2>
-  <div class="post-grid">
-    {{ $posts := where .Site.RegularPages "Section" "posts" }}
-    {{ range first 6 ($posts.ByDate.Reverse) }}
-    <article class="post-card">
-      <div class="card-meta-top">
-        {{ with .Params.topic }}<span class="badge badge-topic">{{ . }}</span>{{ end }}
-        {{ with .Params.difficulty }}<span class="badge badge-{{ . }}">{{ . }}</span>{{ end }}
+{{/* ── FEATURED: Latest article ── */}}
+{{ with $latest }}
+<section class="featured-article">
+  <div class="featured-inner">
+    <div class="featured-meta">
+      <span class="label-featured">Latest Lesson</span>
+      <time class="feat-date">{{ .Date.Format "Jan 2, 2006" }}</time>
+    </div>
+    <h2 class="featured-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ with .Params.summary_zh }}
+    <p class="featured-zh">{{ . }}</p>
+    {{ end }}
+    <div class="feat-footer">
+      <div class="feat-tags">{{ range first 5 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
+      <a href="{{ .Permalink }}" class="btn-read">Open Lesson →</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ── ARTICLE GRID ── */}}
+<section class="article-feed">
+  <div class="feed-header">
+    <h2 class="feed-title">Recent Articles</h2>
+    <a href="{{ .Site.BaseURL }}posts/" class="feed-all">View all →</a>
+  </div>
+  <div class="article-grid">
+    {{ range $rest }}
+    <article class="article-card">
+      <div class="card-inner">
+        <div class="card-top">
+          {{ with .Params.difficulty }}<span class="diff-pill diff-{{ . }}">{{ . }}</span>{{ else }}<span></span>{{ end }}
+          <time class="card-date">{{ .Date.Format "Jan 2" }}</time>
+        </div>
+        <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.summary_zh }}<p class="card-zh">{{ . | truncate 80 }}</p>{{ end }}
+        <div class="card-bottom">
+          <div class="card-tags">{{ range first 3 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
+          <a href="{{ .Permalink }}" class="card-link">Read →</a>
+        </div>
       </div>
-      <h2 class="card-title">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </h2>
-      <p class="card-date">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-      </p>
-      {{ with .Params.summary_zh }}
-        <p class="card-summary-zh">{{ . }}</p>
-      {{ end }}
-      <p class="card-summary">{{ .Summary | plainify | truncate 100 }}</p>
-      <div class="card-tags">
-        {{ range .Params.tags }}<span class="badge badge-tag">{{ . }}</span>{{ end }}
-      </div>
-      <a href="{{ .Permalink }}" class="card-cta">Read article →</a>
     </article>
     {{ end }}
   </div>
-
-  {{ if gt (len $posts) 6 }}
-  <div class="view-all">
-    <a href="{{ .Site.BaseURL }}posts/" class="view-all-link">View all articles →</a>
+  {{ if gt (len $posts) 7 }}
+  <div class="feed-more">
+    <a href="{{ .Site.BaseURL }}posts/" class="btn-outline">View all {{ len $posts }} articles →</a>
   </div>
   {{ end }}
 </section>
