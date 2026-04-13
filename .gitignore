@@ -1,0 +1,24 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# Hugo cache
+.hugo_build.lock
+
+# macOS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Screenshot files (accidentally committed)
+themes/scmp-learner/Screenshot*.png
+themes/scmp-learner/Screenshot*.jpg
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if ever used)
+node_modules/
