@@ -11,18 +11,17 @@ jobs:
     permissions:
       contents: read
       deployments: write
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
         with:
           submodules: true  # Fetch Hugo themes
           fetch-depth: 0    # Fetch all history for Git Info
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: peaceiris/actions-hugo@v3.0.0
         with:
           hugo-version: 'latest'
           extended: true
