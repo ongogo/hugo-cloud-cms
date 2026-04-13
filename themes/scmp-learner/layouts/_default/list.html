@@ -18,7 +18,7 @@
             <time class="card-date">{{ .Date.Format "Jan 2, 2006" }}</time>
           </div>
           <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-          {{ with .Params.summary_zh }}<p class="card-zh">{{ . | truncate 100 }}</p>{{ end }}
+          {{ with .Params.summary_zh }}<p class="card-zh">{{ substr . 0 100 }}</p>{{ end }}
           <div class="card-bottom">
             <div class="card-tags">{{ range first 4 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
             <a href="{{ .Permalink }}" class="card-link">阅读全文 →</a>
