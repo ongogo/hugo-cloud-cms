@@ -60,19 +60,19 @@
     <a href="{{ .Site.BaseURL }}posts/" class="feed-all">View all →</a>
   </div>
   <div class="article-grid">
-    {{ range $rest }}
+    {{ range $index, $item := $rest }}
     <article class="article-card">
-      <div class="card-number">{{ printf "%02d" (add 1 ($.Site.RegularPages.ByDate.Reverse.IndexOf .)) }}</div>
+      <div class="card-number">{{ printf "%02d" (add $index 2) }}</div>
       <div class="card-inner">
         <div class="card-top">
-          {{ with .Params.difficulty }}<span class="diff-pill diff-{{ . }}">{{ . }}</span>{{ else }}<span></span>{{ end }}
-          <time class="card-date">{{ .Date.Format "Jan 2" }}</time>
+          {{ with $item.Params.difficulty }}<span class="diff-pill diff-{{ . }}">{{ . }}</span>{{ else }}<span></span>{{ end }}
+          <time class="card-date">{{ $item.Date.Format "Jan 2" }}</time>
         </div>
-        <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        {{ with .Params.summary_zh }}<p class="card-zh">{{ . | truncate 80 }}</p>{{ end }}
+        <h3 class="card-title"><a href="{{ $item.Permalink }}">{{ $item.Title }}</a></h3>
+        {{ with $item.Params.summary_zh }}<p class="card-zh">{{ . | truncate 80 }}</p>{{ end }}
         <div class="card-bottom">
-          <div class="card-tags">{{ range first 3 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
-          <a href="{{ .Permalink }}" class="card-link">Read →</a>
+          <div class="card-tags">{{ range first 3 $item.Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
+          <a href="{{ $item.Permalink }}" class="card-link">Read →</a>
         </div>
       </div>
     </article>
