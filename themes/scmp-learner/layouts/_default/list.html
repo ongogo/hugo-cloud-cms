@@ -3,7 +3,7 @@
   <header class="list-header">
     <div class="list-header-inner">
       <span class="list-eyebrow">All Lessons</span>
-      <h1 class="list-title">SCMP<br><em>English Learning</em></h1>
+      <h1 class="list-title">SCMP <em>English</em></h1>
       <p class="list-sub">{{ len .Pages }} articles · vocabulary, idioms &amp; exercises for Chinese learners</p>
     </div>
   </header>
@@ -12,13 +12,14 @@
     <div class="article-grid article-grid-full">
       {{ range .Pages.ByDate.Reverse }}
       <article class="article-card">
+        <div class="card-number">{{ printf "%02d" (add 1 ($.Pages.ByDate.Reverse.IndexOf .)) }}</div>
         <div class="card-inner">
           <div class="card-top">
             {{ with .Params.difficulty }}<span class="diff-pill diff-{{ . }}">{{ . }}</span>{{ else }}<span></span>{{ end }}
             <time class="card-date">{{ .Date.Format "Jan 2, 2006" }}</time>
           </div>
           <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-          {{ with .Params.summary_zh }}<p class="card-zh">{{ substr . 0 100 }}</p>{{ end }}
+          {{ with .Params.summary_zh }}<p class="card-zh">{{ . | truncate 100 }}</p>{{ end }}
           <div class="card-bottom">
             <div class="card-tags">{{ range first 4 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
             <a href="{{ .Permalink }}" class="card-link">阅读全文 →</a>

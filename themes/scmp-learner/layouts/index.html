@@ -8,20 +8,26 @@
 {{/* ── HERO MASTHEAD ── */}}
 <section class="hero-masthead">
   <div class="masthead-inner">
-    <div class="masthead-eyebrow">
-      <span class="eyebrow-tag">Real News · Real English</span>
-      <span class="eyebrow-date">{{ now.Format "Monday, January 2, 2006" }}</span>
+    <div class="masthead-text">
+      <div class="masthead-eyebrow">
+        <span class="eyebrow-bar"></span>
+        <span class="eyebrow-tag">Real News · Real English</span>
+        <span class="eyebrow-date">{{ now.Format "Monday, 2 Jan 2006" }}</span>
+      </div>
+      <h1 class="masthead-title">
+        <span>Learn English</span>
+        <em>Through the News</em>
+      </h1>
+      <p class="masthead-sub">SCMP articles curated &amp; annotated for Chinese learners — vocabulary, idioms, and writing tips woven into every lesson.</p>
+      <a href="{{ .Site.BaseURL }}posts/" class="btn-cta">
+        Browse All Lessons
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="8" x2="14" y2="8"/><polyline points="9,3 14,8 9,13"/></svg>
+      </a>
     </div>
-    <h1 class="masthead-title">
-      <span>Learn English</span>
-      <em>Through the News</em>
-    </h1>
-    <p class="masthead-sub">SCMP articles curated &amp; annotated for Chinese learners — vocabulary, idioms, and writing tips in every lesson.</p>
-    <a href="{{ .Site.BaseURL }}posts/" class="btn-cta">Browse All Lessons →</a>
-  </div>
-  <div class="masthead-deco" aria-hidden="true">
-    <span class="deco-num">{{ len $posts }}</span>
-    <span class="deco-label">lessons</span>
+    <div class="masthead-deco" aria-hidden="true">
+      <div class="deco-num">{{ len $posts }}</div>
+      <div class="deco-label">lessons</div>
+    </div>
   </div>
 </section>
 
@@ -29,18 +35,20 @@
 {{ with $latest }}
 <section class="featured-article">
   <div class="featured-inner">
-    <div class="featured-meta">
-      <span class="label-featured">Latest Lesson</span>
-      <time class="feat-date">{{ .Date.Format "Jan 2, 2006" }}</time>
+    <div class="featured-text">
+      <div class="featured-meta">
+        <span class="label-featured">Latest Lesson</span>
+        <time class="feat-date">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </div>
+      <h2 class="featured-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.summary_zh }}
+      <p class="featured-zh">{{ . }}</p>
+      {{ end }}
+      <div class="feat-footer">
+        <div class="feat-tags">{{ range first 5 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
+      </div>
     </div>
-    <h2 class="featured-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    {{ with .Params.summary_zh }}
-    <p class="featured-zh">{{ . }}</p>
-    {{ end }}
-    <div class="feat-footer">
-      <div class="feat-tags">{{ range first 5 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
-      <a href="{{ .Permalink }}" class="btn-read">Open Lesson →</a>
-    </div>
+    <a href="{{ .Permalink }}" class="feat-open-btn">Open Lesson →</a>
   </div>
 </section>
 {{ end }}
@@ -48,12 +56,13 @@
 {{/* ── ARTICLE GRID ── */}}
 <section class="article-feed">
   <div class="feed-header">
-    <h2 class="feed-title">Recent Articles</h2>
+    <span class="feed-title">Recent Articles</span>
     <a href="{{ .Site.BaseURL }}posts/" class="feed-all">View all →</a>
   </div>
   <div class="article-grid">
     {{ range $rest }}
     <article class="article-card">
+      <div class="card-number">{{ printf "%02d" (add 1 ($.Site.RegularPages.ByDate.Reverse.IndexOf .)) }}</div>
       <div class="card-inner">
         <div class="card-top">
           {{ with .Params.difficulty }}<span class="diff-pill diff-{{ . }}">{{ . }}</span>{{ else }}<span></span>{{ end }}

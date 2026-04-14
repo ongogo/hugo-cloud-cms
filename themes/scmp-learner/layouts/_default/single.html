@@ -3,16 +3,16 @@
 
   <header class="post-hero">
     <div class="post-hero-inner">
-      <div class="post-crumbs">
+      <nav class="post-crumbs">
         <a href="{{ .Site.BaseURL }}">Home</a>
         <span>›</span>
         <a href="{{ .Site.BaseURL }}posts/">Articles</a>
         <span>›</span>
-        <span class="crumb-cur">{{ .Title | truncate 45 }}</span>
-      </div>
+        <span class="crumb-cur">{{ .Title | truncate 50 }}</span>
+      </nav>
       <div class="post-meta-pills">
         {{ with .Params.difficulty }}<span class="diff-pill diff-{{ . }}">{{ . }}</span>{{ end }}
-        {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+        {{ range first 4 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
       </div>
       <h1 class="post-title">{{ .Title }}</h1>
       <div class="post-meta">
@@ -27,9 +27,60 @@
   </header>
 
   <div class="post-content">
+
+    {{/* ── MAIN BODY ── */}}
     <div class="post-body">
       {{ .Content }}
     </div>
+
+    {{/* ── STICKY SIDEBAR ── */}}
+    <aside class="post-sidebar">
+
+      {{/* Reading progress */}}
+      <div class="sidebar-box">
+        <div class="sidebar-box-title">Reading Progress</div>
+        <div class="sidebar-progress">
+          <div class="progress-label">
+            <span>Article</span>
+            <span class="progress-pct" id="progressPct">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+      </div>
+
+      {{/* Tags */}}
+      {{ with .Params.tags }}
+      <div class="sidebar-box">
+        <div class="sidebar-box-title">Topics</div>
+        <div class="sidebar-tags">
+          {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{/* Quick tip box */}}
+      <div class="sidebar-box">
+        <div class="sidebar-box-title">Study Tips</div>
+        <p class="sidebar-tip">
+          Read the <strong>Article Summary</strong> first, then study each vocabulary item. Try the exercises <em>without looking</em> at the answers, then check your work.
+        </p>
+      </div>
+
+      {{/* Table of contents — static links matching h2 content patterns */}}
+      <div class="sidebar-box">
+        <div class="sidebar-box-title">In This Lesson</div>
+        <nav class="sidebar-toc">
+          <a class="toc-link" href="#article-summary">📰 Article Summary</a>
+          <a class="toc-link" href="#vocabulary">🎯 Vocabulary</a>
+          <a class="toc-link" href="#phrases">🔗 Phrases &amp; Connectors</a>
+          <a class="toc-link" href="#practice">📖 Practice</a>
+          <a class="toc-link" href="#teachers-tip">🧠 Teacher's Tip</a>
+        </nav>
+      </div>
+
+    </aside>
   </div>
 
   <footer class="post-foot">
@@ -37,4 +88,26 @@
   </footer>
 
 </article>
+
+<script>
+// Add smooth anchor IDs to h2s in post-body based on their emoji prefix
+document.querySelectorAll('.post-body h2').forEach(h => {
+  const text = h.textContent;
+  if (text.includes('摘要') || text.includes('Summary'))  h.id = 'article-summary';
+  else if (text.includes('词汇') || text.includes('核心')) h.id = 'vocabulary';
+  else if (text.includes('短语') || text.includes('动词') || text.includes('连接')) h.id = 'phrases';
+  else if (text.includes('理解') || text.includes('练习') || text.includes('Practice')) h.id = 'practice';
+  else if (text.includes('Teacher') || text.includes('Tip') || text.includes('tip')) h.id = 'teachers-tip';
+});
+
+// Smooth scroll for sidebar TOC
+document.querySelectorAll('.toc-link').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const id = link.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
 {{ end }}

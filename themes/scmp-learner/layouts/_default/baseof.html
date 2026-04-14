@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" data-theme="light">
+<html lang="{{ .Site.LanguageCode }}" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
 
-    <!-- Fraunces · Plus Jakarta Sans · Noto Serif SC -->
+    <!-- Spectral · DM Sans · Noto Serif SC -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700;1,9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
@@ -23,9 +23,7 @@
                 <span class="logo-divider"></span>
                 <span class="logo-text">English Learning</span>
             </a>
-            <div class="nav-center">
-                <span class="nav-tagline">Real news · Real English · For Chinese learners</span>
-            </div>
+            <div class="nav-center">Real News · Real English · For Chinese Learners</div>
             <div class="nav-right">
                 <a href="{{ .Site.BaseURL }}posts/" class="nav-link">All Articles</a>
                 <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
@@ -43,7 +41,7 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                <span class="footer-logo">SCMP <em>English</em></span>
+                <div class="footer-logo">SCMP <em>English</em></div>
                 <p class="footer-tagline">Real journalism. Real vocabulary. Real progress.</p>
             </div>
             <nav class="footer-nav">
@@ -58,10 +56,11 @@
     </footer>
 
     <script>
-    // Theme toggle
+    // ── Theme toggle (dark default) ──────────────────────
     const btn = document.getElementById('themeBtn');
     const html = document.documentElement;
-    const saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const saved = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark');
     html.setAttribute('data-theme', saved);
     btn.addEventListener('click', () => {
         const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
@@ -69,24 +68,28 @@
         localStorage.setItem('theme', next);
     });
 
-    // Scrolled header
+    // ── Scrolled header shadow ───────────────────────────
     const header = document.getElementById('siteHeader');
     window.addEventListener('scroll', () => {
         header.classList.toggle('scrolled', window.scrollY > 20);
     }, { passive: true });
 
-    // Reading progress bar
+    // ── Reading progress (bar + sidebar fill) ────────────
     const bar = document.getElementById('readingBar');
-    if (bar) {
-        window.addEventListener('scroll', () => {
-            const body = document.querySelector('.post-body');
-            if (!body) return;
-            const rect = body.getBoundingClientRect();
-            const scrolled = Math.max(0, -rect.top);
-            const pct = Math.min(100, (scrolled / body.offsetHeight) * 100);
-            bar.style.width = pct + '%';
-        }, { passive: true });
-    }
+    const fill = document.getElementById('progressFill');
+    const pctLabel = document.getElementById('progressPct');
+
+    window.addEventListener('scroll', () => {
+        const body = document.querySelector('.post-body');
+        if (!body) return;
+        const rect = body.getBoundingClientRect();
+        const scrolled = Math.max(0, -rect.top);
+        const pct = Math.min(100, Math.round((scrolled / body.offsetHeight) * 100));
+        const w = pct + '%';
+        if (bar) bar.style.width = w;
+        if (fill) fill.style.width = w;
+        if (pctLabel) pctLabel.textContent = pct + '%';
+    }, { passive: true });
     </script>
 </body>
 </html>
