@@ -45,7 +45,7 @@
       <p class="featured-zh">{{ . }}</p>
       {{ end }}
       <div class="feat-footer">
-        <div class="feat-tags">{{ range first 5 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
+        <div class="feat-tags">{{ with .Params.tags }}{{ range first 5 . }}<span class="tag">{{ . }}</span>{{ end }}{{ end }}</div>
       </div>
     </div>
     <a href="{{ .Permalink }}" class="feat-open-btn">Open Lesson →</a>
@@ -71,7 +71,7 @@
         <h3 class="card-title"><a href="{{ $item.Permalink }}">{{ $item.Title }}</a></h3>
         {{ with $item.Params.summary_zh }}<p class="card-zh">{{ . | truncate 80 }}</p>{{ end }}
         <div class="card-bottom">
-          <div class="card-tags">{{ range first 3 $item.Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
+          <div class="card-tags">{{ with $item.Params.tags }}{{ range first 3 . }}<span class="tag">{{ . }}</span>{{ end }}{{ end }}</div>
           <a href="{{ $item.Permalink }}" class="card-link">Read →</a>
         </div>
       </div>

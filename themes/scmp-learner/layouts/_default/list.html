@@ -21,7 +21,7 @@
           <h3 class="card-title"><a href="{{ $item.Permalink }}">{{ $item.Title }}</a></h3>
           {{ with $item.Params.summary_zh }}<p class="card-zh">{{ . | truncate 100 }}</p>{{ end }}
           <div class="card-bottom">
-            <div class="card-tags">{{ range first 4 $item.Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
+            <div class="card-tags">{{ with $item.Params.tags }}{{ range first 4 . }}<span class="tag">{{ . }}</span>{{ end }}{{ end }}</div>
             <a href="{{ $item.Permalink }}" class="card-link">阅读全文 →</a>
           </div>
         </div>
