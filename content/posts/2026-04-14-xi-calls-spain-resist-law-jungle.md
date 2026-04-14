@@ -1,9 +1,13 @@
-# Xi Calls on Spain to Jointly Resist 'Law of the Jungle' in a Turbulent World
+---
+title: "Xi Calls on Spain to Jointly Resist 'Law of the Jungle' in a Turbulent World"
+author: "Meredith Chen"
+date: 2026-04-14T17:00:00+08:00
+description: "Chinese President Xi Jinping told visiting Spanish Prime Minister Pedro Sánchez that China and Spain should work together to resist the 'law of the jungle' and defend true multilateralism in a turbulent world."
+tags: ["SCMP", "China Diplomacy", "English-Learning"]
+---
 
-**作者**：Meredith Chen
 **来源**：South China Morning Post
 **发布日期**：2026年4月14日 17:00
-**最后更新**：2026年4月14日 17:00
 
 ---
 
