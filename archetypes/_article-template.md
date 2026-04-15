@@ -1,6 +1,15 @@
 # 文章模板 — SCMP Hugo CMS
 
-> 参考：https://hugo-cloud-cms.pages.dev/posts/2026-04-13-ancient-chinese-map-global-history/
+---
+
+title: "ARTICLE TITLE HERE"
+date: {{ .Date }}
+tags: ["SCMP", "CATEGORY"]
+author: "SCMP"
+source_url: "ORIGINAL_SCMP_URL_HERE"
+difficulty: "intermediate"
+topic: "politics"
+summary_zh: "一句话的中文摘要，用于文章列表预览。"
 
 ---
 
@@ -50,7 +59,29 @@ SCMP China Geopolitics English-Learning Study Tips
 
 - **Phrase 1** — 例句或用法说明
 - **Phrase 2** — 例句或用法说明
+1. **phrase here** - 中文翻译 - 例句或用法说明
+   - *Context: "Paste the sentence from the article containing this phrase here."*
 
+2. **phrase here** - 中文翻译 - 例句或用法说明
+   - *Context: "Paste the sentence from the article containing this phrase here."*
+
+3. **phrase here** - 中文翻译 - 例句或用法说明
+   - *Context: "Paste the sentence from the article containing this phrase here."*
+
+4. **phrase here** - 中文翻译 - 例句或用法说明
+   - *Context: "Paste the sentence from the article containing this phrase here."*
+
+5. **phrase here** - 中文翻译 - 例句或用法说明
+   - *Context: "Paste the sentence from the article containing this phrase here."*
+
+6. **phrase here** - 中文翻译 - 例句或用法说明
+   - *Context: "Paste the sentence from the article containing this phrase here."*
+
+7. **phrase here** - 中文翻译 - 例句或用法说明
+   - *Context: "Paste the sentence from the article containing this phrase here."*
+
+8. **phrase here** - 中文翻译 - 例句或用法说明
+   - *Context: "Paste the sentence from the article containing this phrase here."*
 ---
 
 ## Practice 练习
