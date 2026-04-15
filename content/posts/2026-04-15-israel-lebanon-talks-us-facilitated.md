@@ -1,4 +1,4 @@
-# 文章模板 — SCMP Hugo CMS ---
+---
 title: "Israel, Lebanon agree to launch direct talks after rare US-facilitated meeting"
 date: 2026-04-15T21:10:00+08:00
 tags: ["SCMP", "Politics", "Middle East"]
