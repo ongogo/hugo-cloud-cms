@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for Git Info
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3.0.0
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
@@ -36,4 +36,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=hugo-cloud-cms --branch=main
+          command: pages deploy public --project-name=hugo-cloud-cms --branch=main --commit-dirty=true
