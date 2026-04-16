@@ -6,7 +6,7 @@ author: "SCMP"
 source_url: "https://www.scmp.com/economy/global-economy/article/3350180/us-officials-claim-china-hoarding-oil-what-does-data-say"
 difficulty: "intermediate"
 topic: "global-economy"
-summary_zh: "美官员指控中国在美以对伊战争期间"囤积"石油，但数据显示中国实则面临自身供应链压力。中国外交部反驳称，能源市场动荡源于中东局势，美国封锁霍尔木兹海峡才是真正根源。"
+summary_zh: '美官员指控中国在美以对伊战争期间"囤积"石油，但数据显示中国实则面临自身供应链压力。中国外交部反驳称，能源市场动荡源于中东局势，美国封锁霍尔木兹海峡才是真正根源。'
 ---
 
 # 【美官员指控中国"囤积"石油，数据真相如何？】
