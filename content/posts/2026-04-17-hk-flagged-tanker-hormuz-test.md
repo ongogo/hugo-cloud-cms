@@ -1,5 +1,5 @@
 ---
-title: \"Hong Kong-flagged oil tanker passes through Strait of Hormuz in test of US blockade\"
+title: "Hong Kong-flagged oil tanker passes through Strait of Hormuz in test of US blockade"
 date: 2026-04-17T14:29:00+08:00
 tags: [\"SCMP\", \"Geopolitics\", \"China\", \"Shipping\"]
 author: \"SCMP\"
