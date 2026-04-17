@@ -6,7 +6,7 @@ author: "SCMP"
 source_url: "https://www.scmp.com/news/china/military/article/3350344/what-does-japans-role-us-philippine-military-drill-mean-taiwan"
 difficulty: "intermediate"
 topic: "geopolitics"
-summary_zh: "日本自卫队首次参与美菲"肩并肩"联合军演，分析认为此举旨在强化第一岛链防线，并向中国大陆传递威慑信号，但北京或将采取更激进的反制措施。"
+summary_zh: '日本自卫队首次参与美菲"肩并肩"联合军演，分析认为此举旨在强化第一岛链防线，并向中国大陆传递威慑信号，但北京或将采取更激进的反制措施。'
 ---
 
 # 【日本首度参与美菲联合军演，对台湾意味着什么？】
