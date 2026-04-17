@@ -1,25 +1,25 @@
 ---
-title: \"Exclusive | Hong Kong-flagged oil tanker passes through Strait of Hormuz in test of US blockade\"
-date: 2026-04-17
-tags: [\"SCMP\", \"Geopolitics\"]
+title: \"Hong Kong-flagged oil tanker passes through Strait of Hormuz in test of US blockade\"
+date: 2026-04-17T14:29:00+08:00
+tags: [\"SCMP\", \"Geopolitics\", \"China\", \"Shipping\"]
 author: \"SCMP\"
 source_url: \"https://www.scmp.com/news/china/article/3350423/hong-kong-flagged-oil-tanker-passes-through-strait-hormuz-test-us-blockade?module=top_story&pgtype=homepage\"
 difficulty: \"intermediate\"
-topic: \"US-China-Iran Relations\"
-summary_zh: '一艘香港籍油轮在美方封锁伊朗港口期间成功通过霍尔木兹海峡，被视为对美国封锁行动的测试。'
+topic: \"us-china-iran-relations\"
+summary_zh: '一艘香港籍油轮在美方封锁伊朗港口期间成功通过霍尔木兹海峡，被视为对美国封锁行动效力的测试。'
 ---
 
-# Exclusive | Hong Kong-flagged oil tanker passes through Strait of Hormuz in test of US blockade
+# 【香港籍油轮通过霍尔木兹海峡，测试美国封锁效力】
 
-**作者**：SCMP
-**来源**：South China Morning Post
-**发布日期**：2026年4月17日 14:29
+**作者**：SCMP 
+**来源**：South China Morning Post 
+**发布日期**：2026年4月17日 14:29 
 **最后更新**：2026年4月17日 21:38
 
 ---
 
 ## Topics 标签
-SCMP China Geopolitics English-Learning Study Tips
+SCMP | China | Geopolitics | English-Learning | Study Tips
 
 ---
 
@@ -33,7 +33,8 @@ A Hong Kong-flagged oil tanker, identified as AVA 6, has successfully navigated 
 
 ---
 
-## Article 正文
+## Article
+
 An oil tanker sailing under the flag of Hong Kong has passed through the Strait of Hormuz and entered the Gulf of Oman, as a US blockade continues to target vessels entering or leaving Iranian ports, according to a maritime data firm.
 
 The vessel, AVA 6, marks at least the second transit of a China-linked tanker through the waterway since the US military operation began. This movement is closely monitored by maritime data providers as it tests the parameters and enforcement of the ongoing US blockade targeting Iranian maritime trade.
@@ -41,6 +42,7 @@ The vessel, AVA 6, marks at least the second transit of a China-linked tanker th
 ---
 
 ## Vocabulary 词汇
+
 | English | 中文释义 |
 |---------|---------|
 | flag-flagged | 挂旗（指船舶登记国） |
@@ -83,10 +85,10 @@ Focus on the phrase \"sailing under the flag of.\" In international maritime law
 
 ---
 
-**标签**：SCMP
+**标签**：SCMP | Geopolitics | China | Shipping | US-China Relations
 
-**上篇文章**：【None】
-**下篇文章**：【None】
+**上篇文章**：【US officials claim China is 'hoarding' oil. What does the data say?】（链接）
+**下篇文章**：— 
 **相关文章**：
 - 【US blockade of Strait Hormuz】(https://www.scmp.com/news/china/military/article/3349933/us-blockade-strait-hormuz-easy-enough-them-do-what-cost)
 
