@@ -1,5 +1,5 @@
 ---
-title: \"Lebanon becomes key to Iran-US peace talks amid fears of Israel’s ‘hegemony’\"
+title: \"Lebanon becomes key to Iran-US peace talks amid fears of Israel’s hegemony\"
 date: 2026-04-17T21:00:00+08:00
 tags: [\"SCMP\", \"Geopolitics\", \"Middle East\", \"Diplomacy\"]
 author: \"SCMP\"
@@ -110,8 +110,6 @@ This article is a great example of high-level geopolitical analysis. Pay attenti
 
 **标签**：SCMP | Geopolitics | Middle East | Diplomacy | US-Iran Relations
 
-**上篇文章**：【Hong Kong-flagged oil tanker passes through Strait of Hormuz in test of US blockade】（链接）
-**下篇文章**：— 
 **相关文章**：
 - 【Israel, Lebanon agree to launch direct talks】（链接）
 
