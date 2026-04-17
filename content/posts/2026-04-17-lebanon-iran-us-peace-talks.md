@@ -1,5 +1,5 @@
 ---
-title: \"Lebanon becomes key to Iran-US peace talks amid fears of Israel’s hegemony\"
+title: "Lebanon becomes key to Iran-US peace talks amid fears of Israel’s hegemony"
 date: 2026-04-17T21:00:00+08:00
 tags: [\"SCMP\", \"Geopolitics\", \"Middle East\", \"Diplomacy\"]
 author: \"SCMP\"
