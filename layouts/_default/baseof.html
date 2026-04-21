@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
+
+    <!-- Spectral · DM Sans · Noto Serif SC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+    <div class="reading-bar"><div class="reading-bar-fill" id="readingBar"></div></div>
+
+    <header class="site-header" id="siteHeader">
+        {{ partial "navigation.html" . }}
+    </header>
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">SCMP <em>English</em></div>
+                <p class="footer-tagline">Real journalism. Real vocabulary. Real progress.</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="{{ .Site.BaseURL }}">Home</a>
+                <a href="{{ .Site.BaseURL }}posts/">All Articles</a>
+                {{ if .Site.Menus.main }}
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+                {{ end }}
+                {{ end }}
+            </nav>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; 2026 SCMP English Learning. Hugo site generated with ❤️ for Chinese learners.</p>
+        </div>
+    </footer>
+
+    <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>
