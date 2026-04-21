@@ -6,6 +6,17 @@ hasCJKLanguage = true
 summaryLength = 60
 
 [params]
-  mainSections = ["posts"]
-  description = "Read SCMP news articles and master English vocabulary in context — designed for Chinese learners."
-  author = "SCMP English Learning"
+ mainSections = ["posts"]
+ description = "Read SCMP news articles and master English vocabulary in context — designed for Chinese learners."
+ author = "SCMP English Learning"
+
+# Menu configuration
+[[menu.main]]
+ name = "CGTN Articles"
+ url = "/posts/"
+ weight = 10
+
+[[menu.main]]
+ name = "BBC English Listening"
+ url = "/bbc-english/"
+ weight = 20
