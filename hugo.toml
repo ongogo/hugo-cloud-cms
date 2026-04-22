@@ -12,11 +12,11 @@ summaryLength = 60
 
 # Menu configuration
 [[menu.main]]
- name = "CGTN Articles"
+ name = "CGTN-News"
  url = "/posts/"
  weight = 10
 
 [[menu.main]]
- name = "BBC English Listening"
+ name = "BBC-English"
  url = "/bbc-english/"
  weight = 20
