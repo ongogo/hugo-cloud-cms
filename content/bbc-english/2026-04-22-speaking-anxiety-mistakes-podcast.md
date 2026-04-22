@@ -35,23 +35,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/features/beating_speaking_anx
 
 ---
 
-## 重点词汇与短语
-
-| English | 中文释义 | 词性 | 例句 |
-|---------|---------|------|------|
-| Accessibility | 无障碍 |  |  |
-| Beating |  |  |  |
-| Speaking |  |  |  |
-| Anxiety |  |  |  |
-| scared |  |  |  |
-| making |  |  |  |
-| mistakes |  |  |  |
-| podcast |  |  |  |
-| Reflect |  |  |  |
-| Vocabulary |  |  |  |
-| Transcript |  |  |  |
-| Latest |  |  |  |
-
 ---
 
 ## 中文总结

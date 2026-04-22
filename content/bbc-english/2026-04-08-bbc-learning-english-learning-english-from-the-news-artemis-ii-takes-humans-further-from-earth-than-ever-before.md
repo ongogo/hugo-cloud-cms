@@ -35,23 +35,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/learning-eng
 
 ---
 
-## 重点词汇与短语
-
-| English | 中文释义 | 词性 | 例句 |
-|---------|---------|------|------|
-| Accessibility | 无障碍 |  |  |
-| Learning |  |  |  |
-| English |  |  |  |
-| Artemis |  |  |  |
-| humans |  |  |  |
-| further |  |  |  |
-| before |  |  |  |
-| headlines |  |  |  |
-| Latest |  |  |  |
-| Learning |  |  |  |
-| English |  |  |  |
-| Explore |  |  |  |
-
 ---
 
 ## 中文总结

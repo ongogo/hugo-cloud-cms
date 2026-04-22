@@ -35,20 +35,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/office-engli
 
 ---
 
-## 重点词汇与短语
-
-| English | 中文释义 | 词性 | 例句 |
-|---------|---------|------|------|
-| Accessibility | 无障碍 |  |  |
-| Office |  |  |  |
-| English |  |  |  |
-| Suggestions |  |  |  |
-| advice |  |  |  |
-| Latest |  |  |  |
-| Office |  |  |  |
-| English |  |  |  |
-| Explore |  |  |  |
-
 ---
 
 ## 中文总结
