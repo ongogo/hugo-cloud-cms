@@ -6,7 +6,7 @@ hasCJKLanguage = true
 summaryLength = 60
 
 [params]
- mainSections = ["posts"]
+ mainSections = ["posts", "bbc-english"]
  description = "Read SCMP news articles and master English vocabulary in context — designed for Chinese learners."
  author = "SCMP English Learning"
 
