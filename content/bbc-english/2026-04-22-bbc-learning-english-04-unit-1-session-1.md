@@ -1,6 +1,6 @@
 ---
 title: "BBC Learning English - Lower Intermediate / Unit 1 / Session 1"
-date: 2026-04-27T10:00:00+08:00
+date: 2026-04-22T10:00:00+08:00
 tags: ['BBC', 'Listening', 'B1', 'intermediate', 'course', 'unit-1', 'session-1']
 author: "BBC Learning English"
 audio_url: "https://downloads.bbc.co.uk/learningenglish/english/course/lower-intermediate/unit-1/session-1/1/l1_int_1.1.1_audio.mp3"
