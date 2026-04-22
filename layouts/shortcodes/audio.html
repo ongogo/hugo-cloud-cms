@@ -1,16 +1,12 @@
 {{ $audioURL := .Get 0 }}
 {{ if $audioURL }}
 <div class="audio-player">
-  <audio controls preload="metadata">
-    <source src="{{ $audioURL }}" type="audio/mpeg">
-    <source src="{{ $audioURL }}" type="audio/wav">
-    Your browser does not support the audio element.
-  </audio>
-  <div class="audio-controls">
-    <button class="audio-play-btn" onclick="this.previousElementSibling.play()">▶️ 播放</button>
-    <button class="audio-pause-btn" onclick="this.previousElementSibling.previousElementSibling.pause()">⏸️ 暂停</button>
-  </div>
+ <audio controls preload="metadata">
+ <source src="{{ $audioURL }}" type="audio/mpeg">
+ <source src="{{ $audioURL }}" type="audio/wav">
+ Your browser does not support the audio element.
+ </audio>
 </div>
 {{ else }}
-  <p><em>Audio file not available</em></p>
+ <p><em>Audio file not available</em></p>
 {{ end }}
