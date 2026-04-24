@@ -1,6 +1,6 @@
 ---
-title: "BBC Learning English -         Learning English from the News / {{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "BBC Learning English -         Learning English from the News / [Title]"
+date: 2026-04-25T00:00:00+08:00
 tags: ['BBC', 'Listening', 'B1']
 author: "BBC Learning English"
 audio_url: ""
@@ -12,37 +12,38 @@ summary_zh: ""
 source_url: ""
 ---
 
-这是一个为你精心准备的英语学习笔记，旨在帮助你掌握 {{ replace .Name "-" " " | title }}。
+这是一个为你精心准备的英语学习笔记，旨在帮助你掌握 [Topic]。
 
 {{< audio "" >}}
 
 ---
 
-### 📘 英语学习笔记：{{ replace .Name "-" " " | title }}
+### 📘 英语学习笔记：[Title]
 
 #### 1. 核心导读 (Introduction)
-[在此处输入简介]
+[在此处输入简介，简要介绍节目的背景和主要内容。建议使用中英文对照。]
 
 #### 2. 重点词汇释义 (Key Vocabulary)
 
 | 单词/短语 | 释义 (English) | 释义 (Chinese) | 来源 |
 | :--- | :--- | :--- | :--- |
-| **Word** | Definition | 释义 | Source |
+| **Word** | English definition here. | 中文释义 | Source |
 
 #### 3. 精彩选段与解析 (Transcript Highlights)
 
-*   **[关键点]:**
-    > "[Quote]"
-    > **解析：** [Analysis]
+*   **[关键点1]:**
+    > "[此处引用原文片段]"
+    > **解析：** [此处对该片段进行深入解析，解释词汇用法或文化背景。]
 
 #### 4. 学习思考 (Critical Thinking)
-1. [Question]
+1. [提出的第一个启发式问题]
+2. [提出的第二个启发式问题]
 
 ---
 
 ### 🎧 听力原文 (Transcript)
 
-[Insert full transcript here]
+[在此处插入完整的英文原文]
 
 ---
 
