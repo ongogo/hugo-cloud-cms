@@ -1,3 +1,17 @@
+---
+title: "BBC Learning English -         BBC News / Strait of Hormuz Blockade Standoff"
+date: 2026-04-24T10:00:00+08:00
+tags: ['BBC', 'News', 'B1', 'Strait-of-Hormuz', 'Iran', 'US', 'Geopolitics']
+author: "BBC Learning English"
+audio_url: ""
+level: "B1"
+description: "The US and Iran's rival blockades of the Strait of Hormuz have become a 'test of wills', creating a dangerous standoff."
+difficulty: "intermediate"
+topic: "BBC Listening"
+summary_zh: "美国和伊朗在霍尔木兹海峡实施相互封锁，形成对峙局面。"
+source_url: "https://www.bbc.com/news/videos/ckgwlgyyyv0o"
+---
+
 # Strait of Hormuz Blockade: "A Dangerous Standoff"
 
 *BBC News Video Summary with Chinese Explanations*
