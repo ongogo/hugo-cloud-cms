@@ -1,0 +1,64 @@
+{{/* Immersive one-note-at-a-time scroll feed. Expects $.pages to be a page collection. */}}
+{{ $pages := .pages }}
+<div class="feed-scroll" id="feedScroll">
+  {{ range $i, $p := $pages }}
+  <section class="feed-slide" data-index="{{ $i }}">
+    <a href="{{ $p.Permalink }}" class="slide-link" aria-label="{{ $p.Title }}">
+      <div class="slide-bg slide-bg-{{ mod $i 5 }}" aria-hidden="true"></div>
+      <div class="slide-noise" aria-hidden="true"></div>
+      <div class="slide-content">
+        <div class="slide-top">
+          <span class="slide-section">{{ if eq $p.Section "bbc-english" }}BBC Learning English{{ else }}{{ $p.Section }}{{ end }}</span>
+          {{ with $p.Params.difficulty }}<span class="diff-pill diff-{{ . | urlize }}">{{ . }}</span>{{ end }}
+        </div>
+
+        <h2 class="slide-title">{{ $p.Title }}</h2>
+
+        {{ with $p.Params.summary_zh }}
+        <p class="slide-zh">{{ . | truncate 130 }}</p>
+        {{ end }}
+
+        <div class="slide-meta">
+          <time>{{ $p.Date.Format "Jan 2, 2006" }}</time>
+          {{ with $p.Params.tags }}
+          <div class="slide-tags">{{ range first 4 . }}<span class="tag">{{ . }}</span>{{ end }}</div>
+          {{ end }}
+        </div>
+
+        <div class="slide-cta">
+          <span>Tap to immerse</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="8" x2="14" y2="8"/><polyline points="9,3 14,8 9,13"/></svg>
+        </div>
+      </div>
+    </a>
+  </section>
+  {{ end }}
+</div>
+
+<div class="feed-progress" id="feedProgress" aria-hidden="true">
+  <div class="feed-progress-fill" id="feedProgressFill"></div>
+</div>
+<div class="feed-hint" id="feedHint">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19,12 12,19 5,12"/></svg>
+  <span>Scroll for the next lesson</span>
+</div>
+
+<script>
+(function(){
+  const scroller = document.getElementById('feedScroll');
+  const fill = document.getElementById('feedProgressFill');
+  const hint = document.getElementById('feedHint');
+  if (!scroller) return;
+  const slides = scroller.querySelectorAll('.feed-slide');
+  const total = slides.length;
+
+  function update(){
+    const idx = Math.round(scroller.scrollTop / scroller.clientHeight);
+    const pct = total > 1 ? (idx / (total - 1)) * 100 : 0;
+    if (fill) fill.style.height = pct + '%';
+    if (hint) hint.classList.toggle('hidden', idx > 0);
+  }
+  scroller.addEventListener('scroll', () => window.requestAnimationFrame(update), { passive: true });
+  update();
+})();
+</script>

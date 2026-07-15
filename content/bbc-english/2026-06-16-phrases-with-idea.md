@@ -1,7 +1,7 @@
 ---
 title: "BBC Learning English - English in a Minute / Phrases with 'idea'"
 date: 2026-06-16T09:00:00+08:00
- tags: ['BBC', 'Listening', 'B1', 'Idioms', 'English Phrases']
+tags: ['BBC', 'Listening', 'B1', 'Idioms', 'English Phrases']
 author: "BBC Learning English"
 audio_url: "https://emp.bbc.co.uk/emp/SMPj/2.61.13/iframe.html"
 level: "B1"
