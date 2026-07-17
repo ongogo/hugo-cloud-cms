@@ -1,5 +1,5 @@
 ---
-title: "BBC Learning English -         Learning English from the News / [Title]"
+title: "BBC Learning English - Learning English from the News / [Title]"
 date: 2026-04-25T00:00:00+08:00
 tags: ['BBC', 'Listening', 'B1']
 author: "BBC Learning English"
@@ -10,6 +10,8 @@ difficulty: "intermediate"
 topic: "BBC Listening"
 summary_zh: ""
 source_url: ""
+draft: true
+---
 ---
 
 这是一个为你精心准备的英语学习笔记，旨在帮助你掌握 [Topic]。

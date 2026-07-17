@@ -1,22 +1,11 @@
 baseURL = 'https://hugo-cloud-cms.pages.dev/'
 languageCode = 'en-us'
-title = 'SCMP English Learning'
+title = 'English Learning Note'
 theme = 'scmp-learner'
 hasCJKLanguage = true
 summaryLength = 60
 
 [params]
  mainSections = ["posts", "bbc-english"]
- description = "Read SCMP news articles and master English vocabulary in context — designed for Chinese learners."
- author = "SCMP English Learning"
-
-# Menu configuration
-[[menu.main]]
- name = "CGTN-News"
- url = "/posts/"
- weight = 10
-
-[[menu.main]]
- name = "BBC-English"
- url = "/bbc-english/"
- weight = 20
+ description = "One lesson at a time — scroll, tap in, and immerse yourself in real English, annotated for learners."
+ author = "English Learning Note"
