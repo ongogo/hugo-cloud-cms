@@ -26,6 +26,15 @@
     </div>
   </header>
 
+  {{ with .Params.audio_url }}
+  <div class="post-audio">
+    <audio controls preload="metadata">
+      <source src="{{ . }}" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  {{ end }}
+
   <div class="post-content">
 
     {{/* ── MAIN BODY ── */}}

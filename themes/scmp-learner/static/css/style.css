@@ -379,6 +379,18 @@ img { max-width: 100%; height: auto; display: block; }
 .source-link { color: var(--link); transition: color var(--t); }
 .source-link:hover { color: var(--accent); }
 
+/* ── AUDIO PLAYER (from front-matter audio_url) ────────── */
+.post-audio {
+  max-width: var(--max-w); margin: 1.5rem auto 0;
+  padding: 0 clamp(1.25rem,5vw,2.5rem);
+}
+.post-audio audio {
+  width: 100%; max-width: var(--prose-w); display: block;
+  height: 2.75rem; border-radius: var(--r-md);
+  background: var(--surface); border: 1px solid var(--border);
+}
+.post-audio audio::-webkit-media-controls-panel { background: var(--surface); }
+
 /* ── TWO-COL ARTICLE LAYOUT ────────────────────────────── */
 .post-content {
   max-width: var(--max-w); margin-inline: auto;
