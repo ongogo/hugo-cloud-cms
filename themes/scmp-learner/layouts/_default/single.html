@@ -6,7 +6,7 @@
       <nav class="post-crumbs">
         <a href="{{ .Site.BaseURL }}">Home</a>
         <span>›</span>
-        <a href="{{ .Site.BaseURL }}posts/">Articles</a>
+        <a href="{{ .CurrentSection.RelPermalink }}">Articles</a>
         <span>›</span>
         <span class="crumb-cur">{{ .Title | truncate 50 }}</span>
       </nav>
@@ -93,7 +93,7 @@
   </div>
 
   <footer class="post-foot">
-    <a href="{{ .Site.BaseURL }}posts/" class="btn-back">← Back to all articles</a>
+    <a href="{{ .CurrentSection.RelPermalink }}" class="btn-back">← Back to all articles</a>
   </footer>
 
 </article>
