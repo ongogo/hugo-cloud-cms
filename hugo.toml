@@ -1,9 +1,12 @@
-baseURL = 'https://hugo-cloud-cms.pages.dev/'
+baseURL = 'https://note.ironnori.cc/'
 languageCode = 'en-us'
 title = 'English Learning Note'
 theme = 'scmp-learner'
 hasCJKLanguage = true
 summaryLength = 60
+
+[outputs]
+ home = ["HTML", "RSS", "JSON"]
 
 [params]
  mainSections = ["posts", "bbc-english"]

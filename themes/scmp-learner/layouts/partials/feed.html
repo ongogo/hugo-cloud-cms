@@ -3,7 +3,7 @@
 <div class="feed-scroll" id="feedScroll">
   {{ range $i, $p := $pages }}
   <section class="feed-slide" data-index="{{ $i }}">
-    <a href="{{ $p.Permalink }}" class="slide-link" aria-label="{{ $p.Title }}">
+    <a href="{{ $p.RelPermalink }}" class="slide-link" aria-label="{{ $p.Title }}">
       <div class="slide-bg slide-bg-{{ mod $i 5 }}" aria-hidden="true"></div>
       <div class="slide-noise" aria-hidden="true"></div>
       <div class="slide-content">
