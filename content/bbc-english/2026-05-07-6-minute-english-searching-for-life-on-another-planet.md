@@ -6,7 +6,7 @@ audio_url: "https://downloads.bbc.co.uk/learningenglish/features/6min/260507_sea
 level: "B1"
 difficulty: "Intermediate"
 topic: "Space Exploration, Exoplanets"
-summary_zh: "本集《六分钟英语》探讨科学家是否在系外行星TRAPPIST-1e上发现了生命存在的可能性。Neil和Becca邀请太空记者Caroline Steele介绍最新研究，并带领听众学习相关词汇，如"habitable"（宜居的）、"potential"（潜力）和"rule out"（排除）。"
+summary_zh: "本集《六分钟英语》探讨科学家是否在系外行星TRAPPIST-1e上发现了生命存在的可能性。Neil和Becca邀请太空记者Caroline Steele介绍最新研究，并带领听众学习相关词汇，如“habitable”（宜居的）、“potential”（潜力）和“rule out”（排除）。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260507"
 ---
 

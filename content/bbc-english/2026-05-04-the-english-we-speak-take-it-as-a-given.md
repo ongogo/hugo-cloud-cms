@@ -6,7 +6,7 @@ audio_url: "https://downloads.bbc.co.uk/learningenglish/features/tews/260504_TEW
 level: "B1"
 difficulty: "Intermediate"
 topic: "English Idioms, Assumptions"
-summary_zh: "本集《地道英语》节目讲解短语 "take it as a given" 的用法。这个表达用于描述那些我们可以默认认为是真实的事情，即使没有百分之百的确定性。Feifei 和 Phil 通过生动的例子展示了如何在日常对话中使用这个短语。"
+summary_zh: "本集《地道英语》节目讲解短语 “take it as a given” 的用法。这个表达用于描述那些我们可以默认认为是真实的事情，即使没有百分之百的确定性。Feifei 和 Phil 通过生动的例子展示了如何在日常对话中使用这个短语。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260504"
 ---
 
