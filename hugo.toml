@@ -9,6 +9,6 @@ summaryLength = 60
  home = ["HTML", "RSS", "JSON"]
 
 [params]
- mainSections = ["posts", "bbc-english"]
+ mainSections = ["bbc-english"]
  description = "One lesson at a time — scroll, tap in, and immerse yourself in real English, annotated for learners."
  author = "English Learning Note"
