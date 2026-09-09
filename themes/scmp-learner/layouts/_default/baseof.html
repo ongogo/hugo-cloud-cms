@@ -37,7 +37,8 @@
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
     <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
 </head>
-<body{{ if or .IsHome (eq .Kind "section") }} class="feed-page"{{ end }}>
+{{- $isFeedPage := or .IsHome (in (slice "section" "term") .Kind) -}}
+<body{{ if $isFeedPage }} class="feed-page"{{ end }}>
     <div class="reading-bar"><div class="reading-bar-fill" id="readingBar"></div></div>
 
     <header class="site-header" id="siteHeader">
@@ -48,6 +49,12 @@
                 <span class="logo-text">English Learning Note</span>
             </a>
             <div class="nav-right">
+                {{ if $isFeedPage }}
+                <button class="view-btn" id="viewBtn" aria-label="Switch between scroll and list view">
+                    <svg class="icon-view-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                    <svg class="icon-view-scroll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="7" rx="1.5"/><rect x="4" y="14" width="16" height="7" rx="1.5"/></svg>
+                </button>
+                {{ end }}
                 <button class="search-btn" id="searchBtn" aria-label="Search">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                 </button>
@@ -103,6 +110,19 @@
         html.setAttribute('data-theme', next);
         localStorage.setItem('theme', next);
     });
+
+    // ── Feed view toggle (immersive scroll ↔ compact list) ─
+    (function(){
+        const viewBtn = document.getElementById('viewBtn');
+        if (!viewBtn) return;
+        const body = document.body;
+        const savedView = localStorage.getItem('viewMode') || 'scroll';
+        if (savedView === 'list') body.classList.add('view-list');
+        viewBtn.addEventListener('click', () => {
+            const isList = body.classList.toggle('view-list');
+            localStorage.setItem('viewMode', isList ? 'list' : 'scroll');
+        });
+    })();
 
     // ── Scrolled header shadow ───────────────────────────
     const header = document.getElementById('siteHeader');

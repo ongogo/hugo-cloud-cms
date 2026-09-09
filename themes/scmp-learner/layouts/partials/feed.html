@@ -1,5 +1,29 @@
-{{/* Immersive one-note-at-a-time scroll feed. Expects $.pages to be a page collection. */}}
+{{/* Immersive one-note-at-a-time scroll feed, plus a compact list-view alternative.
+     Expects $.pages to be a page collection. Both markups render; CSS + the
+     view-toggle button (baseof.html) show only one at a time, per the
+     `view-list` class on <body> (persisted in localStorage). */}}
 {{ $pages := .pages }}
+<div class="lesson-list" id="lessonList">
+  <div class="lesson-list-inner">
+    {{ range $i, $p := $pages }}
+    <a href="{{ $p.RelPermalink }}" class="lesson-row">
+      <div class="lesson-row-main">
+        <span class="lesson-row-section">{{ if eq $p.Section "bbc-english" }}BBC Learning English{{ else }}{{ $p.Section }}{{ end }}</span>
+        <h2 class="lesson-row-title">{{ $p.Title }}</h2>
+        {{ with $p.Params.summary_zh }}<p class="lesson-row-zh">{{ . | truncate 90 }}</p>{{ end }}
+      </div>
+      <div class="lesson-row-meta">
+        {{ with $p.Params.difficulty }}<span class="diff-pill diff-{{ partial "diff-class.html" . }}">{{ . }}</span>{{ end }}
+        <time>{{ $p.Date.Format "Jan 2, 2006" }}</time>
+        {{ with $p.Params.tags }}
+        <div class="lesson-row-tags">{{ range first 3 . }}<span class="tag">{{ . }}</span>{{ end }}</div>
+        {{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+
 <div class="feed-scroll" id="feedScroll">
   {{ range $i, $p := $pages }}
   <section class="feed-slide" data-index="{{ $i }}">
