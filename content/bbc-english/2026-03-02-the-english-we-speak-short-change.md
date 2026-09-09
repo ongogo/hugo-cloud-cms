@@ -1,7 +1,7 @@
 ---
 title: "BBC Learning English - The English We Speak: Short-change"
 date: 2026-03-02
-tags: [BBC-Learning-English, vocabulary, podcast, idioms, B1]
+tags: ["BBC Learning English", vocabulary, podcast, idioms, B1]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/tews/260302_TEWS_short_change_download.mp3"
 level: "B1"
 difficulty: "Intermediate"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-
 
 **Episode 260302** / 02 Mar 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/tews/260302_TEWS_short_change_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 **中文概要**：本集节目讲解英语表达 "**short-change**" 的用法。这个表达既有字面意思（找零时少找钱），也有引申义（给某人少于其应得的，不公平对待）。Feifei 和 Georgie 通过咖啡、假期套餐、职场认可等生动例子，展示了如何在日常生活中使用这个地道短语。
 

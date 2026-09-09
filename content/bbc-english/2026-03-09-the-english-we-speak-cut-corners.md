@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-
 
 **Episode 260309** / 09 Mar 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/tews/260309_TEWS_cut_corners_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 **中文概要**：本集节目讲解英语表达 "**cut corners**" 的用法。这个表达源自赛跑中的字面义（抄近道跑弯道），引申为做事偷工减料、走捷径、省事省力但结果不佳。Feifei 和 Georgie 通过装修、招待客户、健康安全等生动例子，展示了如何在日常生活中使用这个地道短语，并对比了反义表达 "go the extra mile" 和 "go above and beyond"。
 

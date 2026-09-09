@@ -1,7 +1,7 @@
 ---
 title: "BBC Learning English - Why are billionaires building bunkers"
 date: 2026-01-29
-tags: [BBC-Learning-English, vocabulary, technology, society, intermediate]
+tags: ["BBC Learning English", vocabulary, technology, society, intermediate]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/6min/260129_6_minute_english_why_are_billionaires_building_bunkers_download.mp3"
 level: "B1"
 difficulty: "Intermediate"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-eng
 
 **Episode 260129** / 29 Jan 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/6min/260129_6_minute_english_why_are_billionaires_building_bunkers_download.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
 **Why are tech billionaires building luxury underground bunkers?** People around the world have been preparing for what they believe will be a major world disaster. Now, some tech billionaires are joining this trend by building underground bunker complexes to keep them safe if the world order collapses. Neil discusses this with Hannah from the What in the World podcast, teaching you new vocabulary about survival preparation and social status.
 

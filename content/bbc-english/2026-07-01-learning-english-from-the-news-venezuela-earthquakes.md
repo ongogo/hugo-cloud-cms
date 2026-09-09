@@ -3,8 +3,8 @@ title: "BBC Learning English - Learning English from the News: Venezuela earthqu
 date: 2026-07-01
 tags: ["BBC Learning English", "Learning English from the News", "vocabulary", "disaster", "news"]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260701_LEFTN_Venezuela_earthquakes_download_.mp3"
-level: "upper-intermediate"
-difficulty: "B2"
+level: "B2"
+difficulty: "Upper Intermediate"
 topic: "natural disaster - earthquakes"
 summary_zh: "学习灾难新闻英语：委内瑞拉发生两次强震（7.2 级与 7.5 级），掌握 against the odds、makeshift、negligence 等核心词汇。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260701"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/learning-eng
 
 **Episode 260701** / 01 Jul 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260701_LEFTN_Venezuela_earthquakes_download_.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
 **Learn English from real news stories** - The search for survivors continues after two strong earthquakes hit Venezuela. Learn the vocabulary from the headlines.
 

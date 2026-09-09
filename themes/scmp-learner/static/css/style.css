@@ -143,6 +143,19 @@ img { max-width: 100%; height: auto; display: block; }
 .search-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-lt); }
 .search-btn svg { width: 14px; height: 14px; }
 
+.view-btn {
+  width: 2.1rem; height: 2.1rem; border-radius: var(--r-sm);
+  border: 1px solid var(--border); background: var(--surface);
+  cursor: pointer; color: var(--muted);
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--t);
+}
+.view-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-lt); }
+.view-btn svg { width: 14px; height: 14px; }
+/* icon-view-list = "switch to list" (shown while in scroll mode); icon-view-scroll = "switch to scroll" (shown while in list mode) */
+body.view-list .icon-view-list { display: none; }
+body:not(.view-list) .icon-view-scroll { display: none; }
+
 /* ── SEARCH OVERLAY ────────────────────────────────── */
 body.search-lock { overflow: hidden; }
 .search-overlay {
@@ -611,6 +624,16 @@ html, body { height: 100%; }
 body.feed-page { overflow: hidden; }
 body.feed-page main { display: block; }
 
+/* List view is off by default; toggled by #viewBtn (baseof.html), persisted
+   in localStorage. When active, show the compact list and hide the
+   immersive scroll feed (and let the page scroll normally again). */
+.lesson-list { display: none; }
+body.feed-page.view-list { overflow: visible; }
+body.feed-page.view-list .lesson-list { display: block; }
+body.feed-page.view-list .feed-scroll,
+body.feed-page.view-list .feed-progress,
+body.feed-page.view-list .feed-hint { display: none; }
+
 .feed-scroll {
   height: calc(100vh - 3.75rem);
   height: calc(100dvh - 3.75rem);
@@ -658,10 +681,14 @@ body.feed-page main { display: block; }
 
 .slide-content {
   position: absolute; left: 0; right: 0; bottom: 0;
+  margin-inline: auto;
   padding: 2.5rem clamp(1.25rem, 6vw, 4rem) clamp(3.5rem, 10vh, 5rem);
-  max-width: 46rem;
+  max-width: var(--prose-w);
   display: flex; flex-direction: column; gap: 1rem;
 }
+/* Desktop: keep the lesson content column centered, leaving the left/right
+   sectors clear (reserved for future placements) rather than the content
+   hugging one edge. */
 
 .slide-top { display: flex; align-items: center; gap: .6rem; }
 .slide-section {
@@ -722,4 +749,58 @@ body.feed-page main { display: block; }
 @media (prefers-reduced-motion: reduce) {
   .slide-bg { animation: none; }
   .feed-hint { animation: none; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   LIST VIEW — compact forum/Discourse-style browsing
+   ═══════════════════════════════════════════════════════ */
+.lesson-list-inner {
+  max-width: var(--max-w); margin-inline: auto;
+  padding: 2rem clamp(1.25rem, 5vw, 2.5rem) 5rem;
+}
+
+.lesson-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+  padding: 1.1rem .25rem;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none !important; color: inherit;
+  transition: background var(--t);
+}
+.lesson-row:hover { background: var(--surface-2); }
+.lesson-row:first-child { border-top: 1px solid var(--border); }
+
+.lesson-row-main { min-width: 0; flex: 1; }
+.lesson-row-section {
+  display: block;
+  font-family: 'DM Sans', sans-serif; font-size: .62rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+  margin-bottom: .3rem;
+}
+.lesson-row-title {
+  font-family: 'Spectral', Georgia, serif; font-size: 1.05rem; font-weight: 700;
+  color: var(--text); line-height: 1.35; letter-spacing: -.01em;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.lesson-row-zh {
+  font-family: 'Noto Serif SC', serif; font-size: .78rem; color: var(--text-2);
+  margin-top: .25rem;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.lesson-row-meta {
+  display: flex; align-items: center; gap: .9rem; flex-shrink: 0;
+}
+.lesson-row-meta time {
+  font-family: 'DM Sans', sans-serif; font-size: .72rem; color: var(--faint);
+  white-space: nowrap;
+}
+.lesson-row-tags { display: none; gap: .3rem; }
+
+@media (min-width: 780px) {
+  .lesson-row-tags { display: flex; }
+}
+@media (max-width: 640px) {
+  .lesson-row { flex-direction: column; align-items: flex-start; gap: .5rem; }
+  .lesson-row-title { white-space: normal; }
+  .lesson-row-meta { flex-wrap: wrap; }
 }

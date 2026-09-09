@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-
 
 **Episode 170725** / 25 Jul 2017
 
-<audio controls>
-  <source src="http://downloads.bbc.co.uk/learningenglish/features/tews/170725_tews_snowflake_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](http://downloads.bbc.co.uk/learningenglish/features/tews/170725_tews_snowflake_download.mp3)

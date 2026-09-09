@@ -1,10 +1,10 @@
 ---
 title: "Are saunas good for you?"
 date: 2026-04-02
-tags: [english/learning, health, vocabulary]
+tags: ["BBC Learning English", health, vocabulary]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/6min/260402_6_minute_english_saunas_download.mp3"
-level: B1
-difficulty: Intermediate
+level: "B1"
+difficulty: "Intermediate"
 topic: Health and Wellness
 summary_zh: "桑拿是否对健康有益？本期节目探讨桑拿的健康益处，并介绍相关英语词汇。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260402"

@@ -1,7 +1,7 @@
 ---
 title: "BBC Learning English - 6 Minute English: Searching for Life on Another Planet"
 date: 2026-05-07
-tags: [BBC-Learning-English, vocabulary, science, space, B1]
+tags: ["BBC Learning English", vocabulary, science, space, B1]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/6min/260507_searching_for_life_on_another_planet_download.mp3"
 level: "B1"
 difficulty: "Intermediate"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-eng
 
 **Episode 260507** / 07 May 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/6min/260507_searching_for_life_on_another_planet_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 **中文概要**：
 你相信地球之外存在生命吗？科学家们正在研究一颗名为TRAPPIST-1e的系外行星，它位于宜居带内，可能具有支持生命的条件。本集节目中，Neil和Becca与太空记者Caroline Steele一起探讨这颗行星的潜力，并学习与太空探索相关的英语词汇。

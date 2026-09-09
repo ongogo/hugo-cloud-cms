@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - 6 Minute English / Should we cycle more?"
 date: 2026-07-09T00:00:00+08:00
-tags: ['BBC', 'Listening', 'B1', 'cycling', 'vocabulary', 'environment', 'health']
+tags: ["BBC Learning English", 'Listening', 'B1', 'cycling', 'vocabulary', 'environment', 'health']
 author: "BBC Learning English"
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/6min/260709_6_minute_english_should_we_cycle_more_download.mp3"
 level: "B1"
-difficulty: "intermediate"
+difficulty: "Intermediate"
 topic: "Cycling culture, urban planning, and sustainable transport"
 summary_zh: "Neil 和 Becca 讨论骑行文化，对比荷兰的成熟骑行体系与阿联酋新兴的骑行基础设施，学习 deeply ingrained、take off、milestone、quality of life、liveability、a copy and paste 等实用词汇。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260709"

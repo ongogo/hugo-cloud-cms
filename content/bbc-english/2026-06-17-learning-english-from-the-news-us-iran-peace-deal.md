@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - Learning English from the News / US-Iran peace deal"
 date: 2026-06-17
-tags: ['BBC', 'Learning English from the News', 'politics', 'international relations', 'vocabulary', 'upper-intermediate', 'news']
+tags: ["BBC Learning English", 'Learning English from the News', 'politics', 'international relations', 'vocabulary', 'upper-intermediate', 'news']
 author: "BBC Learning English"
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260617_LEFTN_US-Iran_peace_deal_download.mp3"
-level: "upper-intermediate"
-difficulty: "B2"
+level: "B2"
+difficulty: "Upper Intermediate"
 topic: "US-Iran peace deal and political vocabulary"
 summary_zh: "美伊达成初步和平协议，学习 full circle、spin、tacit 等政治新闻核心词汇。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260617"

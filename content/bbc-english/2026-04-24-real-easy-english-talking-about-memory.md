@@ -1,10 +1,10 @@
 ---
 title: "BBC Learning English - Talking about memory"
 date: 2026-04-24
-tags: [BBC-Learning-English, vocabulary, memory, beginner]
+tags: ["BBC Learning English", vocabulary, memory, beginner]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260424_REE_memory_download.mp3"
 level: "B1"
-difficulty: "Easy"
+difficulty: "Intermediate"
 topic: "Memory and reminiscing"
 summary_zh: "Becca和Georgie用简单的英语谈论记忆力——我们记住过去事物的能力。学习如何谈论健忘、收集纪念品以及和朋友一起回忆往事。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/260424"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-en
 
 **Episode 260424** / 24 Apr 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260424_REE_memory_download.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
 **Welcome to Real Easy English podcast!** In this episode, Becca and Georgie have a real conversation in easy English about memory – our ability to remember things from the past. Learn to talk about being forgetful, collecting mementos and reminiscing with friends.
 

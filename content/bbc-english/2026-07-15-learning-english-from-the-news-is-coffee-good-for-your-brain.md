@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/programmes/p0ny1z9c"
 
 **Episode** / 15 Jul 2026
 
-<audio controls>
-  <source src="https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download/proto/https/vpid/p0ny1x3y.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 高质量 (128kbps)](https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download/proto/https/vpid/p0ny1x3y.mp3)

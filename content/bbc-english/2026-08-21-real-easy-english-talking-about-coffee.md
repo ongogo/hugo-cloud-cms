@@ -4,7 +4,7 @@ date: 2026-08-21
 tags: ["BBC Learning English", "Real Easy English", "vocabulary", "daily life", "A2"]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260821_REE_coffee_download.mp3"
 level: "A2"
-difficulty: "Easy"
+difficulty: "Beginner"
 topic: "Daily Life, Coffee, Preferences, Caffeine"
 summary_zh: "本集《轻松英语》节目探讨咖啡话题。Georgie 和 Neil 用简单英语聊聊咖啡偏好（黑/白、加糖/蜂蜜）、咖啡因影响、去咖啡因咖啡、尝试减少咖啡摄入。学习核心词汇：take your coffee white/black、caffeine、decaffeinated/decaf、cut down on/cut back on。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/260821"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-en
 
 **Episode 260821** / 21 Aug 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260821_REE_coffee_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260821_REE_coffee_download.mp3)

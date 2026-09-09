@@ -4,7 +4,7 @@ date: 2026-07-10
 tags: ["BBC Learning English", "Real Easy English", "vocabulary", "environment", "climate change"]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260710_REE_climate_change_download.mp3"
 level: "A2"
-difficulty: "Easy"
+difficulty: "Beginner"
 topic: "Environment - Climate change"
 summary_zh: "Neil和Becca用简单英语真实对话，讨论气候变化、化石燃料、温室气体、可再生能源和节约资源等环保话题。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/260710"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-en
 
 **Episode 260710** / 10 Jul 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260710_REE_climate_change_download.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
 **Real conversation in easy English** - Becca and Neil talk about how long-term weather patterns are shifting. Learn to talk about fossil fuels, greenhouse gases, renewable energy and conservation. Perfect for elementary learners who want natural English with clear explanations.
 

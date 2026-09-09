@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/features/learning-english-fro
 
 **Episode 260812** / 12 Aug 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260812_LEFTN_rare_solar_eclipse_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260812_LEFTN_rare_solar_eclipse_download.mp3)

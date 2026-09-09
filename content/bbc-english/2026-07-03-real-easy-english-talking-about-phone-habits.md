@@ -1,10 +1,10 @@
 ---
 title: "BBC Learning English - Real Easy English: Talking about phone habits"
 date: 2026-07-03
-tags: [BBC-Learning-English, real-easy-english, vocabulary, technology, lifestyle]
+tags: ["BBC Learning English", real-easy-english, vocabulary, technology, lifestyle]
 audio_url: "https://www.bbc.co.uk/learningenglish/features/real-easy-english/260703"
 level: "A2"
-difficulty: "Easy"
+difficulty: "Beginner"
 topic: "Technology - Phone habits"
 summary_zh: "Neil和Becca用简单英语真实对话，讨论手机使用习惯、屏幕时间、 doomscrolling和通知成瘾等现代生活话题。"
 source_url: "https://www.bbc.co.uk/learningenglish/features/real-easy-english/260703"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/features/real-easy-english/26
 
 **Episode 260703** / 03 Jul 2026
 
-<audio controls>
-  <source src="https://www.bbc.co.uk/learningenglish/features/real-easy-english/260703" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
 **Real conversation in easy English** - Neil and Becca talk about their phone habits, screen time, and the challenges of digital wellbeing. Perfect for elementary learners who want natural English with clear explanations.
 

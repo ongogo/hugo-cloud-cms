@@ -1,19 +1,21 @@
 ---
 title: "How reading shapes your brain"
+date: 2026-05-14
 aliases:
  - "BBC 6 Minute English 260514"
 created: "2026-05-14"
 tags:
- - english/learning
+ - "BBC Learning English"
  - brain
  - reading
 audio_url: "" # TODO: BBC download link not confirmed — verify at bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260514 and fill in
-level: B1
+level: "B1"
 summary_zh: |
   本集《6 Minute English》探讨阅读如何改变我们的大脑结构。研究表明，学习阅读会重塑大脑，且不同语言对大脑的影响不同。Becca和Georgie讨论了这一话题，并介绍了相关词汇。
 summary_en: |
   This episode of *6 Minute English* explores how learning to read reshapes our brain's structure. Research shows that reading changes the brain, and the effects differ depending on the language. Becca and Georgie discuss this topic and teach new vocabulary.
 source_url: "https://www.bbc.co.uk/learningenglish/features/6-minute-english_2026/ep-260514"
+difficulty: "Intermediate"
 ---
 
 ## 📝 Introduction

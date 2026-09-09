@@ -1,3 +1,18 @@
+{{ define "head-extra" }}
+{{- $ld := dict
+    "@context" "https://schema.org"
+    "@type" "LearningResource"
+    "headline" .Title
+    "description" (.Summary | plainify | truncate 160 | replaceRE `\s+` " ")
+    "url" .Permalink
+    "inLanguage" "en"
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
+-}}
+{{- with .Params.level }}{{ $ld = merge $ld (dict "educationalLevel" .) }}{{ end -}}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{ end }}
+
 {{ define "main" }}
 <article class="post-page">
 
@@ -11,7 +26,7 @@
         <span class="crumb-cur">{{ .Title | truncate 50 }}</span>
       </nav>
       <div class="post-meta-pills">
-        {{ with .Params.difficulty }}<span class="diff-pill diff-{{ . }}">{{ . }}</span>{{ end }}
+        {{ with .Params.difficulty }}<span class="diff-pill diff-{{ partial "diff-class.html" . }}">{{ . }}</span>{{ end }}
         <div class="header-tags">{{ with .Params.tags }}{{ range first 4 . }}<span class="tag">{{ . }}</span>{{ end }}{{ end }}</div>
       </div>
       <h1 class="post-title">{{ .Title }}</h1>

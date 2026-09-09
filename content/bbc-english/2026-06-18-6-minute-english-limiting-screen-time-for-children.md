@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - 6 Minute English / Limiting screen time for children"
 date: 2026-06-18
-tags: ['BBC', '6 Minute English', 'technology', 'children', 'screen time', 'parenting', 'B1', 'intermediate', 'vocabulary']
+tags: ["BBC Learning English", '6 Minute English', 'technology', 'children', 'screen time', 'parenting', 'B1', 'intermediate', 'vocabulary']
 author: "BBC Learning English"
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/6min/260618_6_minute_english_limiting_screen_time_for_children_download.mp3"
 level: "B1"
-difficulty: "intermediate"
+difficulty: "Intermediate"
 topic: "Limiting screen time for children and digital wellbeing"
 summary_zh: "Neil 和 Becca 探讨儿童屏幕时间问题，学习 intentional、the bar needs to be higher、enable、eager、shift、set someone up for something 等实用词汇。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260618"
