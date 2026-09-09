@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - English in a Minute / Phrases with 'party'"
 date: 2026-06-30
-tags: ['BBC', 'English in a Minute', 'vocabulary', 'idioms', 'intermediate', 'party']
+tags: ["BBC Learning English", 'English in a Minute', 'vocabulary', 'idioms', 'intermediate', 'party']
 author: "BBC Learning English"
 audio_url: ""
-level: "intermediate"
-difficulty: "B1"
+level: "B1"
+difficulty: "Intermediate"
 topic: "Four phrases with the word 'party'"
 summary_zh: "Phil 教授四个含 'party' 的实用短语：party animal、the life and soul of the party、party trick、late to the party。"
 source_url: "https://www.bbc.co.uk/learningenglish/features/s5english_in_a_minute/260630"

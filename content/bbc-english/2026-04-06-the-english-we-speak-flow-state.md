@@ -1,7 +1,7 @@
 ---
 title: "BBC Learning English - The English We Speak: Flow state"
 date: 2026-04-06
-tags: [BBC-Learning-English, vocabulary, podcast, idioms, B1]
+tags: ["BBC Learning English", vocabulary, podcast, idioms, B1]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/tews/260406_tews_flow_state_download.mp3"
 level: "B1"
 difficulty: "Intermediate"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-
 
 **Episode 260406** / 06 Apr 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/tews/260406_tews_flow_state_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/features/tews/260406_tews_flow_state_download.mp3)

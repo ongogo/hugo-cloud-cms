@@ -4,7 +4,7 @@ date: 2026-07-31
 tags: ["BBC Learning English", "Real Easy English", "vocabulary", "cities", "A2"]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260731_REE_cities_download.mp3"
 level: "A2"
-difficulty: "Easy"
+difficulty: "Beginner"
 topic: "Cities, Urban Life, Travel"
 summary_zh: "本集《轻松英语》节目探讨城市生活。Neil 和 Georgie 用简单英语聊聊住在大城市的优缺点，包括便利性、噪音、费用等，并分享他们想去的城市。学习词汇：bustling、convenient、would like to。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/260731"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-en
 
 **Episode 260731** / 31 Jul 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260731_REE_cities_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260731_REE_cities_download.mp3)

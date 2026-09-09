@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-eng
 
 **Episode 260806** / 06 Aug 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/6min/260806_6_minute_english_how_do_climate_scientists_make_predictions_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/features/6min/260806_6_minute_english_how_do_climate_scientists_make_predictions_download.mp3)

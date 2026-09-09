@@ -3,8 +3,8 @@ title: "BBC Learning English - The English We Speak: Passing ships"
 date: 2026-07-13
 tags: ["BBC Learning English", "The English We Speak", "idioms", "intermediate", "expressions"]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/tews/260713_tews_passing_ships_download.mp3"
-level: "intermediate"
-difficulty: "B1"
+level: "B1"
+difficulty: "Intermediate"
 topic: "idioms - busy lives"
 summary_zh: "学习习语 'passing ships' - 意为两人日程繁忙、难以见面，仅有短暂相遇，常用于形容忙碌的成人生活。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260713"
@@ -14,7 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-
 
 ## 音频资源
 
-<iframe src="https://downloads.bbc.co.uk/learningenglish/features/tews/260713_tews_passing_ships_download.mp3" width="100%" height="80" frameborder="0" allowfullscreen></iframe>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/features/tews/260713_tews_passing_ships_download.mp3)

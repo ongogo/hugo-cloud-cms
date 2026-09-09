@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-eng
 
 **Episode 260903** / 03 Sep 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/6min/260903_6_minute_english_storms_and_climate_change_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/features/6min/260903_6_minute_english_storms_and_climate_change_download.mp3)

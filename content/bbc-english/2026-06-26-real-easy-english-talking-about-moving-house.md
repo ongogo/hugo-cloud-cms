@@ -4,7 +4,7 @@ date: 2026-06-26
 tags: ["BBC Learning English", "Real Easy English", "vocabulary", "lifestyle", "moving house"]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260626_REE_moving_house_download.mp3"
 level: "A2"
-difficulty: "Easy"
+difficulty: "Beginner"
 topic: "Lifestyle - Moving house"
 summary_zh: "Georgie和Neil用简单英语真实对话，讨论搬家话题：打包、搬家公司、保护易碎物品、搬家前准备等实用词汇。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/260626"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-en
 
 **Episode 260626** / 26 Jun 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260626_REE_moving_house_download.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
 **Real conversation in easy English** - Georgie and Neil have a real conversation in easy English about moving house – changing the place where you live. Learn to talk about packing, removal companies and how to protect your fragile possessions!
 

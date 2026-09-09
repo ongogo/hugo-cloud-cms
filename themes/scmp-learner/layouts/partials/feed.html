@@ -9,7 +9,7 @@
       <div class="slide-content">
         <div class="slide-top">
           <span class="slide-section">{{ if eq $p.Section "bbc-english" }}BBC Learning English{{ else }}{{ $p.Section }}{{ end }}</span>
-          {{ with $p.Params.difficulty }}<span class="diff-pill diff-{{ . | urlize }}">{{ . }}</span>{{ end }}
+          {{ with $p.Params.difficulty }}<span class="diff-pill diff-{{ partial "diff-class.html" . }}">{{ . }}</span>{{ end }}
         </div>
 
         <h2 class="slide-title">{{ $p.Title }}</h2>

@@ -1,12 +1,13 @@
 ---
 title: "BBC Learning English - Business Jargon: Jargon about workload"
 date: 2024-11-18T10:00:00Z
-tags: ["bbc-learning-english", "business-jargon", "workload", "vocabulary", "upper-intermediate"]
+tags: ["BBC Learning English", "business-jargon", "workload", "vocabulary", "upper-intermediate"]
 author: "BBC Learning English"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/business-jargon/241118"
-difficulty: "upper-intermediate"
+difficulty: "Upper Intermediate"
 topic: "Business & Work"
 summary_zh: ""
+level: "B2"
 ---
 
 # BBC Learning English - Business Jargon: Jargon about Workload

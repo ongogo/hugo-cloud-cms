@@ -1,0 +1,20 @@
+{{- /*
+  Maps a `difficulty` front-matter value to one of the three CSS classes
+  actually defined in style.css (diff-beginner / diff-intermediate / diff-advanced),
+  regardless of how the label is capitalized or spelled (CEFR code, plain
+  English label, hyphenated, etc). Content should now always use the
+  canonical "Beginner" / "Intermediate" / "Upper Intermediate" labels, but
+  this keeps rendering correct even if a future entry drifts from that.
+
+  Usage: {{ partial "diff-class.html" $p.Params.difficulty }}
+*/ -}}
+{{- $raw := lower (trim (.  | default "") " ") -}}
+{{- $class := "intermediate" -}}
+{{- if in (slice "beginner" "easy" "a2") $raw -}}
+  {{- $class = "beginner" -}}
+{{- else if in (slice "intermediate" "b1") $raw -}}
+  {{- $class = "intermediate" -}}
+{{- else if in (slice "upper intermediate" "upper-intermediate" "advanced" "b2") $raw -}}
+  {{- $class = "advanced" -}}
+{{- end -}}
+{{- $class -}}

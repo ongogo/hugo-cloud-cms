@@ -3,8 +3,8 @@ title: "BBC Learning English - Learning English from the News: Taylor Swift marr
 date: 2026-07-08
 tags: ["BBC Learning English", "Learning English from the News", "vocabulary", "celebrity", "news"]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260708_LEFTN_Taylor_Swift_wedding_download.mp3"
-level: "upper-intermediate"
-difficulty: "B2"
+level: "B2"
+difficulty: "Upper Intermediate"
 topic: "celebrity news - wedding"
 summary_zh: "学习娱乐新闻英语：Taylor Swift 与 Travis Kelce 在麦迪逊广场花园举行盛大婚礼，掌握 star-studded、pinch me moment、fill the gap 等地道表达。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260708"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/learning-eng
 
 **Episode 260708** / 08 Jul 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260708_LEFTN_Taylor_Swift_wedding_download.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
 **Learn English from real news stories** - Pop star Taylor Swift has married American football player Travis Kelce at a huge wedding in New York City. Learn the vocabulary from the headlines.
 

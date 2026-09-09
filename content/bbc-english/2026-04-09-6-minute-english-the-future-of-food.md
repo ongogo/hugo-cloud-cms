@@ -1,10 +1,10 @@
 ---
 title: "The future of food"
 date: 2026-04-09
-tags: [english/learning, environment, food, sustainability]
+tags: ["BBC Learning English", environment, food, sustainability]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/6min/260409_6_minute_english_the_future_of_food_download.mp3"
-level: B1
-difficulty: Intermediate
+level: "B1"
+difficulty: "Intermediate"
 topic: Food and Sustainability
 summary_zh: "未来的食物：英国食品安全面临的挑战及解决方案。讨论气候变化、畜牧业排放和可持续农业的重要性。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260409"

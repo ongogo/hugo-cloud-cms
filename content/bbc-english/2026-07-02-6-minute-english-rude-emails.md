@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - 6 Minute English / Rude emails"
 date: 2026-07-02T00:00:00+08:00
-tags: ['BBC', '6 Minute English', 'workplace', 'email', 'communication', 'B1', 'intermediate', 'vocabulary']
+tags: ["BBC Learning English", '6 Minute English', 'workplace', 'email', 'communication', 'B1', 'intermediate', 'vocabulary']
 author: "BBC Learning English"
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/6min/260702_6_minute_english_rude_emails_download.mp3"
 level: "B1"
-difficulty: "intermediate"
+difficulty: "Intermediate"
 topic: "Rude emails and workplace communication"
 summary_zh: "Phil 和 Becca 探讨职场邮件礼仪，学习 put someone on the defensive、uncivil、belittle、put someone in their place、get something off your plate、frazzled 等实用职场英语表达。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2026/ep-260702"

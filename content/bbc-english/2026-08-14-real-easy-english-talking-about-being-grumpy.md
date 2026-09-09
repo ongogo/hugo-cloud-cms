@@ -4,7 +4,7 @@ date: 2026-08-14
 tags: ["BBC Learning English", "Real Easy English", "vocabulary", "feelings", "A2"]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260814_REE_grumpy_download.mp3"
 level: "A2"
-difficulty: "Easy"
+difficulty: "Beginner"
 topic: "Feelings, Mood, Emotions"
 summary_zh: "本集《轻松英语》节目探讨情绪低落、脾气不好时的表达。Neil 和 Georgie 用简单英语聊聊什么让人 'grumpy'（饿、累、热、月经期、被困室内），以及如何 'cheer yourself up'（吃东西、睡觉、运动、散步、听音乐跳舞）。学习核心词汇：grumpy、in a bad mood、in a good mood、cheerful、cheer up。"
 source_url: "https://www.bbc.co.uk/learningenglish/features/real-easy-english/260814"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/features/real-easy-english/26
 
 **Episode 260814** / 14 Aug 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260814_REE_grumpy_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260814_REE_grumpy_download.mp3)

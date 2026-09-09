@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - Beating Speaking Anxiety / I'm scared of making mistakes - podcast"
 date: 2026-04-22T10:00:00+08:00
-tags: ['BBC', 'Listening', 'B1', 'speaking', 'anxiety', 'mistakes', 'podcast']
+tags: ["BBC Learning English", 'Listening', 'B1', 'speaking', 'anxiety', 'mistakes', 'podcast']
 author: "BBC Learning English"
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/beating_speaking_anxiety/1_BSA_making_mistakes_download.mp3"
 level: "B1"
-difficulty: "intermediate"
+difficulty: "Intermediate"
 topic: "Beating Speaking Anxiety series"
 summary_zh: ""
 source_url: "https://www.bbc.co.uk/learningenglish/features/beating_speaking_anxiety/making_mistakes-podcast"

@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - English in a Minute Series 5 / Phrases with 'dog'"
 date: 2026-07-07T00:00:00+08:00
-tags: ['BBC', 'Vocabulary', 'B1', 'idioms', 'animals', 'expressions']
+tags: ["BBC Learning English", 'Vocabulary', 'B1', 'idioms', 'animals', 'expressions']
 author: "BBC Learning English"
 audio_url: ""
 level: "B1"
-difficulty: "intermediate"
+difficulty: "Intermediate"
 topic: "Four common English idioms with 'dog'"
 summary_zh: "Georgie 在一分钟内教你四个含 'dog' 的地道英语习语：you can't teach an old dog new tricks、dog-eat-dog、every dog has its day、sick as a dog。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/s5english_in_a_minute/260707"

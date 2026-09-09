@@ -1,10 +1,10 @@
 ---
 title: "BBC Learning English - The English We Speak: Sell yourself short"
 date: 2026-06-22
-tags: ['BBC Learning English', 'The English We Speak', 'expressions', 'intermediate', 'self-esteem']
+tags: ["BBC Learning English", 'The English We Speak', 'expressions', 'intermediate', 'self-esteem']
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/tews/260622_tews_sell_yourself_short_download.mp3"
-level: "intermediate"
-difficulty: "B1"
+level: "B1"
+difficulty: "Intermediate"
 topic: "Self-underestimation and confidence"
 summary_zh: "学习表达 'sell yourself short' - 意为低估自己、贬低自己的能力或价值。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-260622"
@@ -14,7 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-
 
 ## 音频资源
 
-<iframe src="https://downloads.bbc.co.uk/learningenglish/features/tews/260622_tews_sell_yourself_short_download.mp3" width="100%" height="80" frameborder="0" allowfullscreen></iframe>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/features/tews/260622_tews_sell_yourself_short_download.mp3)

@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-
 
 **Episode 260803** / 03 Aug 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/features/tews/260804_tews_keep_yourself_to_yourself_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/features/tews/260804_tews_keep_yourself_to_yourself_download.mp3)

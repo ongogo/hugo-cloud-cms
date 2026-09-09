@@ -4,7 +4,7 @@ date: 2026-09-04
 tags: ["BBC Learning English", "Real Easy English", "vocabulary", "complaining", "A2"]
 audio_url: "https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260904_REE_complaining_download.mp3"
 level: "A2"
-difficulty: "Easy"
+difficulty: "Beginner"
 topic: "Complaining, Consumer Rights, Communication"
 summary_zh: "本集《轻松英语》节目探讨投诉话题。Georgie 和 Neil 用简单英语聊聊如何投诉、是否该投诉、投诉的心理障碍、礼貌投诉技巧、酒店评价的可信度等。学习核心词汇：complain、complaint、discount、entitled、reviews。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/260904"
@@ -14,10 +14,6 @@ source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-en
 
 **Episode 260904** / 04 Sep 2026
 
-<audio controls>
-  <source src="https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260904_REE_complaining_download.mp3" type="audio/mpeg">
-  您的浏览器不支持音频播放器。
-</audio>
 
 🔗 **下载链接**:
 - [MP3 音频](https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260904_REE_complaining_download.mp3)

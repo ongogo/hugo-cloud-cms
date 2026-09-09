@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - English in a Minute / Phrases with 'idea'"
 date: 2026-06-16
-tags: ['BBC', 'English in a Minute', 'vocabulary', 'idioms', 'intermediate', 'idea']
+tags: ["BBC Learning English", 'English in a Minute', 'vocabulary', 'idioms', 'intermediate', 'idea']
 author: "BBC Learning English"
 audio_url: ""
-level: "intermediate"
-difficulty: "B1"
+level: "B1"
+difficulty: "Intermediate"
 topic: "Four phrases with the word 'idea'"
 summary_zh: "Phil 教授四个含 'idea' 的实用短语：float an idea、bat an idea around、put ideas into someone's head、that's someone's idea of something。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/s5english_in_a_minute/260616"

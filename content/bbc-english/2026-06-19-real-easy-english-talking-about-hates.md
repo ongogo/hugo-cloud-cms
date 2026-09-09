@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - Real Easy English / Talking about hates"
 date: 2026-06-19
-tags: ['BBC', 'Real Easy English', 'A2', 'hates', 'vocabulary', 'conversation', 'emotions']
+tags: ["BBC Learning English", 'Real Easy English', 'A2', 'hates', 'vocabulary', 'conversation', 'emotions']
 author: "BBC Learning English"
 audio_url: "https://downloads.bbc.co.uk/learningenglish/realeasyenglish/260619_REE_hates_download.mp3"
 level: "A2"
-difficulty: "beginner"
+difficulty: "Beginner"
 topic: "Talking about things you hate and the difference between annoying and frustrating"
 summary_zh: "Neil 和 Georgie 用简单英语聊聊让他们生气的事，学习 can't stand、annoying/irritating、frustrating 等表达厌恶和愤怒的实用词汇。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/real-easy-english/260619"

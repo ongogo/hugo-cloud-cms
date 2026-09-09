@@ -1,11 +1,11 @@
 ---
 title: "BBC Learning English - Learning English from the News / Keir Starmer resigns as UK prime minister"
 date: 2026-06-24
-tags: ['BBC', 'Learning English from the News', 'politics', 'UK', 'vocabulary', 'upper-intermediate', 'news']
+tags: ["BBC Learning English", 'Learning English from the News', 'politics', 'UK', 'vocabulary', 'upper-intermediate', 'news']
 author: "BBC Learning English"
 audio_url: "https://downloads.bbc.co.uk/learningenglish/features/LEFTN/260624_LEFTN_Keir_Starmer_resigns_as_UK_prime_minister_download.mp3"
-level: "upper-intermediate"
-difficulty: "B2"
+level: "B2"
+difficulty: "Upper Intermediate"
 topic: "UK Prime Minister Keir Starmer's resignation and political vocabulary"
 summary_zh: "英国首相基尔·斯塔默辞职，学习 downfall、malaise、a hard act to follow 等政治新闻核心词汇。"
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/learning-english-from-the-news_2026/260624"
