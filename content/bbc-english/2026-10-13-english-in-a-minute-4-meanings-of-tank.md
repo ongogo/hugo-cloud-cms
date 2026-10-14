@@ -17,6 +17,7 @@ generated_by: "Mini_Teacher (M4)"
 
 🔗 **下载链接**:
 - [PDF 文字稿](https://downloads.bbc.co.uk/learningenglish/eiam/unit-3/261013_kyw_meanings_of_tank.pdf)
+- 视频请访问 [BBC 原文页面](https://www.bbc.co.uk/learningenglish/english/features/s5english_in_a_minute/261013)
 
 ---
 
