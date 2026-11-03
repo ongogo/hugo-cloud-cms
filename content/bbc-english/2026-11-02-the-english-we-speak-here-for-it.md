@@ -6,7 +6,8 @@ audio_url: "https://downloads.bbc.co.uk/learningenglish/features/tews/261102_tew
 level: "B1"
 difficulty: "Intermediate"
 topic: "English Expressions, Approval, Agreement"
-summary_zh: "本集介绍表达 'here for it'，用于表示对某事的赞同、支持或鼓励。Becca 注意到 Feifei 换了发型并说 'I\'m so here for it!'，Feifei 于是学习这个表达的用法。核心含义是表示赞同或同意某事，甚至可以鼓励某事。这个表达需要前面有语境，因为代词 'it' 指代之前提到的事物。"
+summary_zh: |
+  本集介绍表达 'here for it'，用于表示对某事的赞同、支持或鼓励。Becca 注意到 Feifei 换了发型并说 'I'm so here for it!'，Feifei 于是学习这个表达的用法。核心含义是表示赞同或同意某事，甚至可以鼓励某事。这个表达需要前面有语境，因为代词 'it' 指代之前提到的事物。
 source_url: "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak_2026/ep-261102"
 generated_by: "Mini_Teacher (M4)"
 ---
